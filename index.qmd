@@ -1,0 +1,9 @@
+---
+page-layout: full
+toc: false
+image: /social-card.jpg
+resources:
+    - "social-card.jpg"
+---
+
+Foo bar

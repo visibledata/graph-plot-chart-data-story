@@ -1,0 +1,12 @@
+---
+title: "Plots & Charts"
+toc: true
+---
+
+We have a wide variety of on-demand training courses available from several online learning providers and also provide bespoke training courses both in-person and online.
+
+In addition we deliver [regular public courses through JB International and the Royal Statistical Society](#public-courses). I'm also a visiting lecturer at Birmingham City University.
+
+<div class="column-page-inset" style='padding-top:10px'>
+
+## R in 3 Months

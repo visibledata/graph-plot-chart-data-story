@@ -1,0 +1,42 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: ""
+  description: "Data visualisation is the best"
+  site-url: https://graphplotchartdatastory.io
+  repo-url: https://github.com/visibledata/graph-plot-chart-chart-data-story
+  # google-analytics: "XX"
+  open-graph: true
+  favicon: favicon.png
+  twitter-card: 
+    creator: "@charliejhadley"
+    site: "@charliejhadley"
+    card-style: "summary_large_image"
+  navbar:
+    left: 
+      - href: graph.qmd
+      - href: plots-and-charts.qmd
+      - href: data-story.qmd
+    right:
+      - href: blog.qmd
+      - href: podcast.qmd
+      - text: "Articles"
+        menu:
+          - text: "Interactive data visualisations"
+            href: interactive-dataviz.qmd
+          - text: "Dashboards"
+            href: dashboards.qmd
+
+format:
+  html:
+    theme: default
+    css: styles.css
+    toc: true
+    toc-depth: 4
+    toc-title: "Contents"
+    html-math-method: katex
+    include-in-header:
+      - includes.html
+    highlight-style: tango
