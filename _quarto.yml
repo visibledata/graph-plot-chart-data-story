@@ -15,7 +15,10 @@ website:
     site: "@charliejhadley"
     card-style: "summary_large_image"
   navbar:
+    background: "#4464AD"
     left: 
+      - icon: house
+        file: index.qmd
       - href: graph.qmd
       - href: plots-and-charts.qmd
       - href: data-story.qmd
