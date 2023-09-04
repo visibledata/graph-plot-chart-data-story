@@ -1,0 +1,135 @@
+---
+title: "GPCDS's original colour palette"
+author: "Charlotte Hadley"
+date: "2023-09-08"
+categories: [news]
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+I've created an initial colour palette by combining two tools together [https://coolors.co/](coolors.co) and [https://color.adobe.com/create/color-wheel](color.adobe.com/create/color-wheel). These colours have been added into the {gpcsdTools} package, however they're liable to change in the future - I'll update this post with footnotes should that happen.
+
+Here are the original colours:
+
+```{r}
+library(tidyverse)
+
+colours_gpcds <- tribble(
+  ~col_name, ~col_hexcode,
+"col_graph_main", "#30CED1",
+"col_graph_shade_darkest", "#105052",
+"col_graph_shade_darker", "#1E8F91",
+"col_graph_triad_dark", "#1B8385",
+"col_graph_triad_alt", "#D13BA4",
+"col_plot_main", "#E0BE36",
+"col_plot_shade_darkest", "#615216",
+"col_plot_shade_darker", "#A18826",
+"col_plot_triad_dark", "#947A14",
+"col_plot_triad_alt", "#4CE0D0",
+"col_chart_main", "#FA8A5B",
+"col_chart_shade_darkest", "#80452E",
+"col_chart_shade_darker", "#C06845",
+"col_chart_triad_dark", "#B3542F",
+"col_chart_triad_alt", "#A7FF75",
+"col_story_main", "#EB526F",
+"col_story_shade_darkest", "#6B2332",
+"col_story_shade_darker", "#AA3D4F",
+"col_story_triad_dark", "#9E283D",
+"col_story_triad_alt", "#EBE46A",
+"col_other_main", "#D8F794",
+"col_other_shade_darkest", "#697847",
+"col_other_shade_darker", "#A1B86D",
+"col_other_triad_dark", "#90AB55",
+"col_other_triad_alt", "#AEC6F8",
+"col_grey_dark", "#656370",
+"col_grey_mid", "#BBBBBD",
+"col_grey_light", "#DCDCDE",
+"col_ux_blue", "#4464AD",
+"col_ux_blue_dark", "#2A3E6E",
+"col_ux_blue_light", "#6B8EF3"
+) %>% 
+  separate_wider_delim(col_name,
+                       delim = "_",
+                       names = c("col", "category", "subcategory"),
+                       too_many = "merge")
+
+colours_gpcds %>% 
+  filter(category %in% c("graph", "plot", "chart", "story", "other")) %>% 
+  mutate(
+         category = fct_relevel(str_to_title(category),
+                                c("Graph", "Plot", "Chart", "Story", "Other"))) %>% 
+  mutate(subcategory = str_to_title(str_replace(subcategory, "_", " "))) %>% 
+  ggplot(aes(x = "",
+             y = subcategory,
+             fill = col_hexcode)) +
+  geom_point(size = 13,
+             shape = 21) +
+  scale_fill_identity() +
+  scale_y_discrete(limits = rev) +
+  labs(x = "",
+       y = "") +
+  facet_grid(~ category) +
+  theme_minimal(base_size = 16) +
+  theme(panel.grid = element_blank())
+```
+
+The "main" and "triad alt" categories give us 10 colours of different hues we can *theoretically* use in a single chart. Here's an example chart 
+
+```{r}
+colours_10_categories <- colours_gpcds %>% 
+  filter(subcategory %in% c("main", "triad_alt")) %>% 
+  pull(col_hexcode)
+
+gg_partyid_10_colours <- gss_cat %>% 
+  ggplot(aes(x = age,
+             y = tvhours,
+             fill = partyid)) +
+  geom_point(shape = 21,
+             size = 5) +
+  scale_fill_manual(values = colours_10_categories) +
+  guides(fill = guide_legend(nrow = 2,
+                             title = "")) +
+  labs(x = "Age",
+       y = "TV hours watched",
+       title = "General Social survey data split by party affiliation to\ndemonstrate colour palette size") +
+  theme_minimal(base_size = 24) +
+  theme(legend.position = "top",
+        panel.grid = element_blank(),
+        axis.line = element_line(),
+        legend.text=element_text(size=18))
+
+ggsave(here::here("posts", "2023-09-08", "images", "gg_partyid_10_colours.png"),
+       gg_partyid_10_colours,
+       width = 15,
+       height = 10)
+```
+
+<img src='images/gg_partyid_10_colours.png' width='100%'/>
+
+Using the {colorblindr} package to simulate the most common form of colour blindness (deuteranomaly) we see the palette still performs surprisingly well.
+
+```{r}
+# colorblindr uses {grid} which I never learned properly so this is a manually
+# generated image.
+# library(colorblindr)
+# colfun <- function(c) {
+#   cvd_transform <- interpolate_cvd_transform(colorspace::deutanomaly_cvd, 
+#                                              1)
+#   simulate_cvd(c, cvd_transform)
+# }
+# 
+# cur_dev <- grDevices::dev.cur()
+# grob <- edit_colors(gg_partyid_10_colours, colfun = colfun)
+# if (cur_dev > 1) 
+#   grDevices::dev.set(cur_dev)
+# grid::grid.draw(grob)
+```
+
+<img src='images/gg_deu_sim.jpg' width='100%'/>
+
+
+
+
+

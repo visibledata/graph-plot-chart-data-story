@@ -42,14 +42,10 @@ case_categories
 To begin turning this into a graph it's useful to create IDs for the nodes
 
 ```{r}
-
-```
-
-![](images/colours.jpg)nodes_categories \<- case_categories %\>%
+nodes_categories <- case_categories %\>%
 distinct(categories) %\>%
 arrange(categories) %\>%
 mutate(id = row_number()) %\>%
 select(id, name = categories)
 nodes_categories
-
-![](images/colours-01.jpg)
+```

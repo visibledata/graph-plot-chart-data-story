@@ -1,0 +1,16 @@
+{
+  "hash": "731faf41589f0e716b3444c94007cf6e",
+  "result": {
+    "markdown": "---\ntitle: \"GPCDS's original colour palette\"\nauthor: \"Charlotte Hadley\"\ndate: \"2023-09-08\"\ncategories: [news]\nexecute:\n  echo: false\n  warning: false\n  message: false\n---\n\n\nI've created an initial colour palette by combining two tools together [https://coolors.co/](coolors.co) and [https://color.adobe.com/create/color-wheel](color.adobe.com/create/color-wheel). These colours have been added into the {gpcsdTools} package, however they're liable to change in the future - I'll update this post with footnotes should that happen.\n\nHere are the original colours:\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\nThe \"main\" and \"triad alt\" categories give us 10 colours of different hues we can *theoretically* use in a single chart. Here's an example chart \n\n\n::: {.cell}\n\n:::\n\n\n<img src='images/gg_partyid_10_colours.png' width='100%'/>\n\nUsing the {colorblindr} package to simulate the most common form of colour blindness (deuteranomaly) we see the palette still performs surprisingly well.\n\n\n::: {.cell}\n\n:::\n\n\n<img src='images/gg_deu_sim.jpg' width='100%'/>\n\n\n\n\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

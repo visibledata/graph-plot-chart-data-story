@@ -130,7 +130,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "news\n\n\n\n\n\n\n\n\n\n\n\nSep 1, 2023\n\n\nCharlotte Hadley\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nAug 26, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nAug 23, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "news\n\n\n\n\n\n\n\n\n\n\n\nSep 8, 2023\n\n\nCharlotte Hadley\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nSep 1, 2023\n\n\nCharlotte Hadley\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nAug 26, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nAug 23, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog.html#r-in-3-months",
@@ -180,5 +180,12 @@
     "title": "Conflicts of interest",
     "section": "Graph",
     "text": "Graph\nWe want to see which categories appear together. This requires us to clean up the category column first:\n\ncase_categories <- fair_use_cases %>% \n  separate_longer_delim(categories,\n                        delim = \";\") %>% \n  mutate(categories = str_trim(categories),\n         categories = str_to_sentence(categories)) %>% \n  select(case, categories) %>% \n  mutate(n_category = n(),\n         .by = categories) %>% \n  filter(n_category >= 10)\ncase_categories\n\n# A tibble: 516 × 3\n   case                                                    categories n_category\n   <chr>                                                   <chr>           <int>\n 1 De Fontbrune v. Wofsy, 39 F.4th 1214 (9th Cir. 2022)    Education…         56\n 2 De Fontbrune v. Wofsy, 39 F.4th 1214 (9th Cir. 2022)    Photograph         56\n 3 Sedlik v. Von Drachenberg, No. CV 21-1102 (C.D. Cal. M… Painting/…         31\n 4 Sedlik v. Von Drachenberg, No. CV 21-1102 (C.D. Cal. M… Photograph         56\n 5 Sketchworks Indus. Strength Comedy, Inc. v. Jacobs, No… Film/audi…         59\n 6 Sketchworks Indus. Strength Comedy, Inc. v. Jacobs, No… Music              25\n 7 Sketchworks Indus. Strength Comedy, Inc. v. Jacobs, No… Parody/sa…         33\n 8 Sketchworks Indus. Strength Comedy, Inc. v. Jacobs, No… Review/co…         41\n 9 Am. Soc'y for Testing & Materials v. Public.Resource.O… Education…         56\n10 Am. Soc'y for Testing & Materials v. Public.Resource.O… Textual w…         93\n# ℹ 506 more rows\n\n\nTo begin turning this into a graph it’s useful to create IDs for the nodes\n\n\n\nnodes_categories <- case_categories %>% distinct(categories) %>% arrange(categories) %>% mutate(id = row_number()) %>% select(id, name = categories) nodes_categories"
+  },
+  {
+    "objectID": "posts/2023-09-08/index.html",
+    "href": "posts/2023-09-08/index.html",
+    "title": "GPCDS’s original colour palette",
+    "section": "",
+    "text": "Here are the original colours:\n\n\n\n\n\nThe “main” and “triad alt” categories give us 10 colours of different hues we can theoretically use in a single chart. Here’s an example chart\n\n\n\n\nUsing the {colorblindr} package to simulate the most common form of colour blindness (deuteranomaly) we see the palette still performs surprisingly well."
   }
 ]
