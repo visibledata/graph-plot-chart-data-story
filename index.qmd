@@ -1,9 +1,15 @@
 ---
-page-layout: full
 toc: false
 image: /social-card.jpg
 resources:
     - "social-card.jpg"
 ---
 
-Foo bar
+<div class="container-fluid wide-div" 
+style='padding-top:-1000px;padding-bottom:20px;margin-top:-35px'>
+<img src="images/gpcds-main-logo.jpg" width='100%'></img>
+</div>
+
+
+
+FOOddddfewgewgewfdw

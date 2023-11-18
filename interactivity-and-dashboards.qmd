@@ -1,0 +1,144 @@
+---
+title: "Interactivity and Dashboards"
+toc: true
+---
+
+<hr>
+
+# DUMMY CONTENT
+
+<hr>
+
+# Data Wrangling
+
+## Edges from grouped data
+
+As an example let's look at the [Freedom of Information tidytuesday dataset](https://github.com/rfordatascience/tidytuesday/blob/master/data/2023/2023-08-29/readme.md).
+
+```{r}
+library(tidyverse)
+
+
+
+fair_use_cases <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-08-29/fair_use_cases.csv')
+fair_use_findings <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-08-29/fair_use_findings.csv')
+
+case_categories <- fair_use_cases %>% 
+  separate_longer_delim(categories,
+                        delim = ";") %>% 
+  mutate(categories = str_trim(categories),
+         categories = str_to_sentence(categories)) %>% 
+  select(case, categories) %>% 
+  mutate(n_category = n(),
+         .by = categories) %>% 
+  filter(n_category >= 10)
+
+case_categories
+```
+
+I want to create a graph where the nodes are categories of case and edges indicate that the categories appear together in a case. To start with we need nodes with IDs:
+
+```{r}
+nodes_categories <- case_categories %>% 
+  distinct(categories) %>% 
+  arrange(categories) %>% 
+  mutate(id = row_number()) %>% 
+  select(id, name = categories)
+
+nodes_categories
+```
+
+To begin creating the edges let's replace the category names with their node IDs:
+
+```{r}
+categories_to_cases <- case_categories %>% 
+  left_join(nodes_categories,
+            by = c("categories" = "name")) %>% 
+  select(case, id)
+
+categories_to_cases
+```
+
+Now we can inner_join() this object with itself to create all the shared categories. The `filter(id.x != id.y)` line removes all "loops" from the graph - ie categories connected with themselves.
+
+```{r}
+edges_categories <- categories_to_cases %>% 
+  inner_join(categories_to_cases, by = "case") %>%
+  filter(id.x != id.y) %>% 
+  select(from = id.x,
+         to = id.y,
+         case)
+
+edges_categories
+```
+
+This list of edges contains duplicates, that's important when proceeding to create a graph.
+
+### Creating a function
+
+```{r}
+case_categories
+
+make_nodes_from_grouped <- function(data_by_group,
+                                    node_name_col){
+  
+  data_by_group %>% 
+  distinct({{node_name_col}}) %>% 
+  arrange({{node_name_col}}) %>% 
+  mutate(id = row_number()) %>% 
+  select(id, name = {{node_name_col}})
+  
+}
+
+nodes_from_fn <- case_categories %>% 
+  make_nodes_from_grouped(categories)
+
+```
+
+```{r}
+make_edges_from_grouped <- function(data_by_group,
+                                    data_nodes,
+                                    grouping_col,
+                                    node_name_col){
+  
+  # node_name_col_chr <- rlang::as_label(node_name_col)
+  # 
+  # print(node_name_col_chr)
+  # 
+
+  grouped_by_nodes <- data_by_group %>%
+  left_join(data_nodes,
+            by = setNames("name", rlang::as_name(rlang::enquo(node_name_col)))) 
+  
+  grouped_by_nodes %>% 
+  inner_join(grouped_by_nodes, by = rlang::as_name(rlang::enquo(grouping_col))) %>%
+  filter(id.x != id.y) %>% 
+  select(from = id.x,
+         to = id.y,
+         {{grouping_col}})
+
+edges_categories
+  
+}
+
+case_categories %>% 
+  make_edges_from_grouped(nodes_from_fn,
+                          grouping_col = case,
+                          node_name_col = categories)
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

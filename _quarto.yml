@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: _site
+  
+resources:
+  - "data/*"
+  - "images/*"
 
 website:
   title: ""
@@ -15,13 +19,20 @@ website:
     site: "@charliejhadley"
     card-style: "summary_large_image"
   navbar:
-    background: "#4464AD"
+    # background: "#4464AD"
+    background: "#2b2b2b"
+    color: "white"
+    title: false
     left: 
       - icon: house
+        text: "Home"
         file: index.qmd
       - href: graph.qmd
       - href: plots-and-charts.qmd
       - href: data-story.qmd
+      - icon: bi-arrows-move
+        text: "Interactivity & Dashboards"
+        file: interactivity-and-dashboards.qmd
     right:
       - href: blog.qmd
       - href: podcast.qmd
@@ -40,6 +51,6 @@ format:
     toc-depth: 4
     toc-title: "Contents"
     html-math-method: katex
-    include-in-header:
-      - includes.html
+    # include-in-header:
+    #   - includes.html
     highlight-style: tango
