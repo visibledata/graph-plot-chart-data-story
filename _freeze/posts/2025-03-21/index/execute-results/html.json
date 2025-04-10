@@ -1,0 +1,17 @@
+{
+  "hash": "e11bc3239a82f658e0572f7592824016",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"GPCDS's colour palette\"\nauthor: \"Charlotte Hadley\"\ndate: \"2025-03-21\"\ncategories: [news]\nexecute:\n  echo: false\n  warning: false\n  message: false\n---\n\n\n\nA big part of the GPCDS project is our colour palette. We've designed a palette with five colours for each \"category\" of data visualisation that's available through the `{GPCDStools}` package, here they are:\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n\nThe palette was designed through experimenting with two excellent interactive tools, [https://coolors.co/](coolors.co) and [https://color.adobe.com/create/color-wheel](color.adobe.com/create/color-wheel). The palette performs fairly well under simulated colour blindness.\n\n\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n\n\n\nThe \"secondary\" colour was generated from triad_alt and the \"tertiary\" from the triad_dark\n\n\n<img src='images/gg_partyid_10_colours.png' width='100%'/>\n\nUsing the {colorblindr} package to simulate the most common form of colour blindness (deuteranomaly) we see the palette still performs surprisingly well.\n\n\n\n\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

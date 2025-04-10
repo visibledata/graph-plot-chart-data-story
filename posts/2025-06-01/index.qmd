@@ -1,0 +1,12 @@
+---
+title: "Podcast Episode 1: Cara Thompson"
+author: "Charlotte Hadley"
+date: "2025-06-01"
+categories: [podcast, expert]
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+Hopefully get Cara!

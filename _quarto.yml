@@ -46,7 +46,7 @@ website:
 format:
   html:
     theme: default
-    css: styles.css
+    css: styles.scss
     toc: true
     toc-depth: 4
     toc-title: "Contents"
