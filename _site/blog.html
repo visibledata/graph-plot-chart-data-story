@@ -24,7 +24,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -41,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-05fe91a66cf75bbbb8c9664867fe5124.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-45a9046c5e6fb1e3b5677092819777d1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-2120db7d856c62281486adb1ca21424a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -159,7 +158,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./li_logo.png" alt="" class="navbar-logo">
+    <img src="./brand-identity/favicon_32x32.png" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -168,53 +167,59 @@ window.Quarto = {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html"> <i class="bi bi-house" role="img">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-workshops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-tools" role="img">
 </i> 
-<span class="menu-text">Home</span></a>
+ <span class="menu-text">Workshops</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-workshops">    
+        <li>
+    <a class="dropdown-item" href="./workshops_r.qmd">
+ <span class="dropdown-text">R</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./graph.html"> 
-<span class="menu-text">Graph</span></a>
+        <li>
+    <a class="dropdown-item" href="./workshops_data-storytelling.qmd">
+ <span class="dropdown-text">Data Storytelling</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./plots-and-charts.html"> 
-<span class="menu-text">Plots &amp; Charts</span></a>
+        <li>
+    <a class="dropdown-item" href="./workshops_overview.qm">
+ <span class="dropdown-text">About our workshops</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./data-story.html"> 
-<span class="menu-text">Data Story</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./interactivity-and-dashboards.html"> <i class="bi bi-arrows-move" role="img">
-</i> 
-<span class="menu-text">Interactivity &amp; Dashboards</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
-<span class="menu-text">Blog</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./podcast.html"> 
-<span class="menu-text">Podcast</span></a>
-  </li>  
+    </ul>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-articles" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Articles</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-articles">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-articles">    
         <li>
-    <a class="dropdown-item" href="./interactive-dataviz.html">
- <span class="dropdown-text">Interactive data visualisations</span></a>
+    <a class="dropdown-item" href="./blog.html">
+ <span class="dropdown-text">Blog</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./dashboards.html">
+    <a class="dropdown-item" href="./dashboards.qmd">
  <span class="dropdown-text">Dashboards</span></a>
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./podcast.html"> <i class="bi bi-broadcast-pin" role="img">
+</i> 
+<span class="menu-text">Podcast</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./consulting-and-coaching.qmd"> <i class="bi bi-chat-left-quote-fill" role="img">
+</i> 
+<span class="menu-text">Contact us</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./what-it-it.qmd"> <i class="bi bi-patch-question-fill" role="img">
+</i> 
+<span class="menu-text">Graph, Plot, Chart or Data Story?</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -257,7 +262,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="cG9kY2FzdCUyQ2V4cGVydA==" data-listing-date-sort="1748732400000" data-listing-file-modified-sort="1743763753743" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
+<div class="quarto-post image-right" data-index="0" data-categories="cG9kY2FzdCUyQ2V4cGVydA==" data-listing-date-sort="1748732400000" data-listing-file-modified-sort="1745264135888" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
 <div class="thumbnail">
 <p><a href="./posts/2025-06-01/index.html" class="no-external"></a></p><a href="./posts/2025-06-01/index.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -265,7 +270,7 @@ window.Quarto = {
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./posts/2025-06-01/index.html" class="no-external">Podcast Episode 1: Cara Thompson</a>
+<a href="./posts/2025-06-01/index.html" class="no-external">Podcast Episode 1: [Surprise Guest]</a>
 </h3>
 <div class="listing-subtitle">
 <a href="./posts/2025-06-01/index.html" class="no-external"></a>
@@ -279,7 +284,7 @@ expert
 </div>
 </div>
 <div class="listing-description">
-<a href="./posts/2025-06-01/index.html" class="no-external">Hopefully get Cara!</a>
+<a href="./posts/2025-06-01/index.html" class="no-external">It’ll be a surprise</a>
 </div>
 </div>
 <div class="metadata">
@@ -293,7 +298,7 @@ Charlotte Hadley
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="bmV3cw==" data-listing-date-sort="1746054000000" data-listing-file-modified-sort="1744289938019" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20" data-listing-word-count-sort="3932">
+<div class="quarto-post image-right" data-index="1" data-categories="bmV3cw==" data-listing-date-sort="1746054000000" data-listing-file-modified-sort="1745262012602" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="21" data-listing-word-count-sort="4161">
 <div class="thumbnail">
 <p><a href="./posts/2025-05-01/index.html" class="no-external"></a></p><a href="./posts/2025-05-01/index.html" class="no-external">
 <p class="card-img-top"><img src="posts/2025-05-01/gpcds-original-sketches.png"  class="thumbnail-image card-img"/></p>
@@ -749,6 +754,49 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>GPCDS is run by Charlotte Hadley <br>Please get in touch!</p>
+</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="./about.html">
+<p>About</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./docs/faq/index.qmd">
+<p>FAQ</p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/quarto_pub">
+      <i class="bi bi-twitter" role="img" aria-label="Quarto Twitter">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/quarto-dev/quarto-cli">
+      <i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://quarto.org/docs/blog/index.xml">
+      <i class="bi bi-rss" role="img" aria-label="Quarto Blog RSS">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 

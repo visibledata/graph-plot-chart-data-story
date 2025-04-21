@@ -1,28 +1,90 @@
 ---
+title-block-style: none
 toc: false
 image: /social-card.jpg
 resources:
     - "social-card.jpg"
+include-in-header:
+  - text: |
+      <style>
+      .title-block-header {
+        display: none;
+      }
+      quarto-title-block {
+        display: none;
+      }
+      .quarto-document-content {
+        padding-top:200px;      
+      }
+      </style>
+      <script src="https://kit.fontawesome.com/a0f522c241.js" crossorigin="anonymous"></script>
 ---
-
-<div class="container-fluid wide-div" style='padding-top:-1000px;padding-bottom:20px;margin-top:-30px;padding-right:0;padding-left:0'>
-<img src="images/gpcds-logo_home-header.png" width='100%'></img>
+<!--- START: Buffer behind the navbar --->
+<div class="column-screen" style='margin-top:-102px;'>
+<div class="column-screen" style='margin-top:0px;'>
+<div class="grid" style="row-gap: 0;column-gap:0;height:80px;width:100vw">
+<div class="g-col-6" style='text-align:right;background-color:{{<brand color graph-primary>}};'><span></span></div>
+<div class="g-col-6" style='background-color:{{<brand color plot-primary>}};'><span></span></div>
+</div>
 </div>
 
-> Data visualisation to big for one topic. Let's explore the messiness.
+<!--- END: Buffer behind the navbar --->
+<div class="column-screen" style='margin-top:0;'>
+<div class="grid" style="row-gap: 0;column-gap:0;">
+  <div class="g-col-6" style='text-align:right;background-color:{{<brand color graph-primary>}};'><img src='brand-identity/ident_major_graph.png' style='max-height:225px;height:calc(33vw);'/></div>
+  <div class="g-col-6" style='background-color:{{<brand color plot-primary>}};'><img src='brand-identity/ident_major_plot.png' style='max-height:225px;height:calc(33vw);text-align:right;'/></div>
 
-<hr>
-
-<div class="container-fluid wide-div" 
-style='padding-top:-1000px;padding-bottom:20px;margin-top:-35px'>
-<img src="images/gpcds-logo_home-header.png" width='100%'></img>
+  <div class="g-col-6" style='text-align:right;background-color:{{<brand color chart-primary>}}'><img src='brand-identity/ident_major_chart.png' style='max-height:225px;height:calc(33vw);'/></div>
+  <div class="g-col-6" style='background-color:{{<brand color story-primary>}}'><img src='brand-identity/ident_major_story.png' style='max-height:225px;height:calc(33vw);text-align:right;'/></div>
 </div>
 
-Data visualisation and data storytell
+<!--- START: Mission statement --->
+<div class="grid" style="row-gap:0;">
+<div class="g-col-12 g-col-md-6 p-md-4" style='text-align:center'>
+<span style='text-align:right;font-size:clamp(48px, 4.5vw, 60px);font-family:Futura;color:{{<brand color black-mid>}};'>
+Data visualisation is too big for one category
+</span>
+</div>
+<div class="g-col-12 g-col-md-6 p-md-4 p-12 d-flex align-items-center container">
+<span style='font-size:clamp(8px, 1.5em, 92px);line-height:1.6;'>
+We use the sometimes confusing, overlapping and personal opinion laced topics about **graphically representing data** as an opportunity to explore, educate... and have some fun!
+</span>
+</div>
+</div>
+<!--- END: Mission statement --->
 
-<div class="d-xs-block d-sm-none">xs <576px</div>
-<div class="d-none d-sm-block d-md-none">sm ≥576px</div>
-<div class="d-none d-md-block d-lg-none">md ≥768px</div>
-<div class="d-none d-lg-block d-xl-none">lg ≥992px</div>
-<div class="d-none d-xl-block d-xxl-none">xl ≥1200px</div>
-<div class="d-none d-xxl-block">xxl ≥1400px</div>
+<div class="grid" style="row-gap:0;font-family:Futura;font-size:1.5em;background-color:{{<brand color grey-light>}};padding-top:20px">
+<div class="g-col-12 g-col-sm-3 p-md-4" style='text-align:center'>
+<a href="workshops_overview.html" style='text-decoration:none;'>
+<i class="fa-solid fa-screwdriver-wrench" style='color:{{<brand color graph-tertiary>}};font-size:2.5em;'></i>
+<p style='color:{{<brand color graph-tertiary>}};'>Workshops</p>
+</a>
+</div>
+<div class="g-col-12 g-col-sm-3 p-md-4" style='text-align:center'>
+<a href="coaching-and-consulting.html" style='text-decoration:none;'>
+<i class="fa-solid fa-users-between-lines" style='color:{{<brand color plot-tertiary>}};font-size:2.5em;'></i>
+<p style='color:{{<brand color plot-tertiary>}};'>Coaching & Consulting</p>
+</a>
+</div>
+<div class="g-col-12 g-col-sm-3 p-md-4" style='text-align:center'>
+<a href="blog.html" style='text-decoration:none;'>
+<i class="fa-solid fa-newspaper" style='color:{{<brand color chart-tertiary>}};font-size:2.5em;'></i>
+<p style='color:{{<brand color chart-tertiary>}};'>Articles</p>
+</a>
+</div>
+<div class="g-col-12 g-col-sm-3 p-md-4" style='text-align:center'>
+<i class="fa-solid fa-podcast" style='color:{{<brand color story-tertiary>}};font-size:2.5em;'></i>
+<p style='color:{{<brand color story-tertiary>}};'>Podcast</p>
+</div>
+
+</div>
+
+</div>
+
+<br/>
+
+<span style='font-size:clamp(8px, 1.5em, 92px);line-height:1.6;'>
+We're soft launching at the moment with lots more coming in Q4 2024...
+</span>
+
+

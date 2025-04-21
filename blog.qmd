@@ -1,9 +1,30 @@
 ---
-title: "Blog"
 listing:
+  id: blog
   contents: posts
   sort: "date desc"
   type: default
   categories: true
   feed: true
+toc: false
+include-in-header:
+  - text: |
+      <style>
+      .title-block-header {
+        display: none;
+      }
+      quarto-title-block {
+        display: none;
+      }
+      .quarto-document-content {
+        padding-top:200px;      
+      }
+      </style>
 ---
+
+You'll find all of our blogposts and featured articles here.
+
+# Blog
+
+::: {#blog}
+:::

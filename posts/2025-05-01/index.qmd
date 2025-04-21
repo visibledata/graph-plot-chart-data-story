@@ -614,6 +614,55 @@ ggsave(quarto_here("gg_story_ident_minor.png"),
 
 # Logomarks
 
-The logomark is constructed from slightly modified versions of the minor idents. The script can be found here
+The logomark is constructed from slightly modified versions of the minor idents - the script for generating the logomarks [can be found on GitHub](https://github.com/visibledata/graph-plot-chart-data-story/blob/master/brand-identity/logomarks.R). There are three different versions of the design:
+
+::: {layout-ncol=3}
+
+![](../../brand-identity/logomark_colour.png)
+
+![](../../brand-identity/logomark_black_on_white.png)
+
+![](../../brand-identity/logomark_white_on_black.png)
+:::
+
+There are two cricisms of the first generation logomarks:
+
+- In the colour logomark the arrows in the story section do not have a lineend on the non-arrow size. This is a limitation of the curve geom.
+
+- There are slight inconsistencies in the linewidth of some elements due to how they're calculated in {ggplot2}. In an ideal world all lines would have the same width. 
+
+# Lettermark
+
+Our combination mark was designed before the lettermark in Canva:
+
+![](../../brand-identity/lettermark_canva.png)
+
+We've tried to replicate the lettermark directly here with HTML and CSS but unfortunately cannot get the `font-weight` to affect the letters:
+
+::: {style='font-family:Futura;font-size:100px;text-align:center;font-weight:100'}
+<span style='color:{{<brand color graph-primary>}};'>G</span><span style='color:{{<brand color black-mid>}};'>|</span><span style='color:{{<brand color plot-primary>}};'>P</span><span style='color:{{<brand color black-mid>}};'>|</span><span style='color:{{<brand color chart-primary>}};'>C</span><span style='color:{{<brand color black-mid>}};'>|</span><span style='color:{{<brand color story-primary>}};'>DS</span>
+:::
+
+# Combination Marks
+
+The combination marks were constructed in Canva for simplicity. To provide some *meaning* to how the lettermark and logomark relate to one another the height of the pipe character has been set to 150px and the logomark is 2 * ϕ * 150px
+
+The 1:1 and 4:3 ratio combination marks are crops of the same image with a vertical alignment, whereas the 16:9 combination mark is horizontally arranged:
+
+::: {layout-ncol=2}
+
+![](../../brand-identity/combination-mark_16-9.png)
+
+![](../../brand-identity/combination-mark_compare-4-3-and-1-1.png)
+
+:::
+
+
+# Favicon
+
+Favicons are miniture versions of the logo used for website icon etc, the logomark has been simplified to rectangles coloured with the primary colour of each visualisation category.
+
+![](../../brand-identity/favicon_144x144.png)
+
 
 

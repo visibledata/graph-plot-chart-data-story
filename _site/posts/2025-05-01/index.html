@@ -60,7 +60,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
@@ -75,7 +74,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-05fe91a66cf75bbbb8c9664867fe5124.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-45a9046c5e6fb1e3b5677092819777d1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-2120db7d856c62281486adb1ca21424a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -129,7 +128,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../li_logo.png" alt="" class="navbar-logo">
+    <img src="../../brand-identity/favicon_32x32.png" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -138,53 +137,54 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> <i class="bi bi-house" role="img">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-workshops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-tools" role="img">
 </i> 
-<span class="menu-text">Home</span></a>
+ <span class="menu-text">Workshops</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-workshops">    
+        <li>
+    <a class="dropdown-item" href="../../workshops_r.qmd">
+ <span class="dropdown-text">R</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../graph.html"> 
-<span class="menu-text">Graph</span></a>
+        <li>
+    <a class="dropdown-item" href="../../workshops_data-storytelling.qmd">
+ <span class="dropdown-text">Data Storytelling</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../plots-and-charts.html"> 
-<span class="menu-text">Plots &amp; Charts</span></a>
+        <li>
+    <a class="dropdown-item" href="../../workshops_overview.html">
+ <span class="dropdown-text">About our workshops</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../data-story.html"> 
-<span class="menu-text">Data Story</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../interactivity-and-dashboards.html"> <i class="bi bi-arrows-move" role="img">
-</i> 
-<span class="menu-text">Interactivity &amp; Dashboards</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../blog.html"> 
-<span class="menu-text">Blog</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../podcast.html"> 
-<span class="menu-text">Podcast</span></a>
-  </li>  
+    </ul>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-articles" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Articles</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-articles">    
-        <li>
-    <a class="dropdown-item" href="../../interactive-dataviz.html">
- <span class="dropdown-text">Interactive data visualisations</span></a>
-  </li>  
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-articles">    
         <li>
     <a class="dropdown-item" href="../../dashboards.html">
  <span class="dropdown-text">Dashboards</span></a>
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../podcast.html"> <i class="bi bi-mic" role="img">
+</i> 
+<span class="menu-text">Podcast</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../what-it-it.qmd"> <i class="bi bi-patch-question" role="img">
+</i> 
+<span class="menu-text">Graph, Plot, Chart or Data Story?</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -235,6 +235,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#the-colours" id="toc-the-colours" class="nav-link active" data-scroll-target="#the-colours">The colours</a></li>
   <li><a href="#category-idents" id="toc-category-idents" class="nav-link" data-scroll-target="#category-idents">Category Idents</a></li>
   <li><a href="#logomarks" id="toc-logomarks" class="nav-link" data-scroll-target="#logomarks">Logomarks</a></li>
+  <li><a href="#lettermark" id="toc-lettermark" class="nav-link" data-scroll-target="#lettermark">Lettermark</a></li>
+  <li><a href="#combination-marks" id="toc-combination-marks" class="nav-link" data-scroll-target="#combination-marks">Combination Marks</a></li>
+  <li><a href="#favicon" id="toc-favicon" class="nav-link" data-scroll-target="#favicon">Favicon</a></li>
   </ul>
 </nav>
     </div>
@@ -807,7 +810,60 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="logomarks" class="level1">
 <h1>Logomarks</h1>
-<p>The logomark is constructed from slightly modified versions of the minor idents. The script can be found here</p>
+<p>The logomark is constructed from slightly modified versions of the minor idents - the script for generating the logomarks <a href="https://github.com/visibledata/graph-plot-chart-data-story/blob/master/brand-identity/logomarks.R">can be found on GitHub</a>. There are three different versions of the design:</p>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="3">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><img src="../../brand-identity/logomark_colour.png" class="img-fluid"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><img src="../../brand-identity/logomark_black_on_white.png" class="img-fluid"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><img src="../../brand-identity/logomark_white_on_black.png" class="img-fluid"></p>
+</div>
+</div>
+</div>
+<p>There are two cricisms of the first generation logomarks:</p>
+<ul>
+<li><p>In the colour logomark the arrows in the story section do not have a lineend on the non-arrow size. This is a limitation of the curve geom.</p></li>
+<li><p>There are slight inconsistencies in the linewidth of some elements due to how they’re calculated in {ggplot2}. In an ideal world all lines would have the same width.</p></li>
+</ul>
+</section>
+<section id="lettermark" class="level1">
+<h1>Lettermark</h1>
+<p>Our combination mark was designed before the lettermark in Canva:</p>
+<p><img src="../../brand-identity/lettermark_canva.png" class="img-fluid"></p>
+<p>We’ve tried to replicate the lettermark directly here with HTML and CSS but unfortunately cannot get the <code>font-weight</code> to affect the letters:</p>
+<div style="font-family:Futura;font-size:100px;text-align:center;font-weight:100">
+<p><span style="color:#30CED1;">G</span><span style="color:#4F4F4F;">|</span><span style="color:#E0BE36;">P</span><span style="color:#4F4F4F;">|</span><span style="color:#FA8A5B;">C</span><span style="color:#4F4F4F;">|</span><span style="color:#EB526F;">DS</span></p>
+</div>
+</section>
+<section id="combination-marks" class="level1">
+<h1>Combination Marks</h1>
+<p>The combination marks were constructed in Canva for simplicity. To provide some <em>meaning</em> to how the lettermark and logomark relate to one another the height of the pipe character has been set to 150px and the logomark is 2 * ϕ * 150px</p>
+<p>The 1:1 and 4:3 ratio combination marks are crops of the same image with a vertical alignment, whereas the 16:9 combination mark is horizontally arranged:</p>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="../../brand-identity/combination-mark_16-9.png" class="img-fluid"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="../../brand-identity/combination-mark_compare-4-3-and-1-1.png" class="img-fluid"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="favicon" class="level1">
+<h1>Favicon</h1>
+<p>Favicons are miniture versions of the logo used for website icon etc, the logomark has been simplified to rectangles coloured with the primary colour of each visualisation category.</p>
+<p><img src="../../brand-identity/favicon_144x144.png" class="img-fluid"></p>
 
 
 </section>
@@ -1231,6 +1287,49 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>GPCDS is run by Charlotte Hadley <br>Please get in touch!</p>
+</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../about.html">
+<p>About</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../../docs/faq/index.qmd">
+<p>FAQ</p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/quarto_pub">
+      <i class="bi bi-twitter" role="img" aria-label="Quarto Twitter">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/quarto-dev/quarto-cli">
+      <i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://quarto.org/docs/blog/index.xml">
+      <i class="bi bi-rss" role="img" aria-label="Quarto Blog RSS">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 

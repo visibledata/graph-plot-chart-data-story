@@ -1,5 +1,5 @@
 ---
-title: "Podcast Episode 1: Cara Thompson"
+title: "Podcast Episode 1: [Surprise Guest]"
 author: "Charlotte Hadley"
 date: "2025-06-01"
 categories: [podcast, expert]
@@ -9,4 +9,4 @@ execute:
   message: false
 ---
 
-Hopefully get Cara!
+It'll be a surprise
