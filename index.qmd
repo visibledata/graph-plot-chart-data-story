@@ -32,11 +32,11 @@ include-in-header:
 <!--- START: GPCDS Banner --->
 <div class="column-screen" style='margin-top:0;'>
 <div class="grid" style="row-gap: 0;column-gap:0;">
-  <div class="g-col-6" style='text-align:right;background-color:{{<brand color graph-primary>}};'><img src='brand-identity/ident_major_graph.png' style='max-height:225px;height:calc(33vw);'/></div>
-  <div class="g-col-6" style='background-color:{{<brand color plot-primary>}};'><img src='brand-identity/ident_major_plot.png' style='max-height:225px;height:calc(33vw);text-align:right;'/></div>
+  <div class="g-col-6" style='text-align:right;background-color:{{<brand color graph-primary>}};'><img src='brand-identity/ident_major_graph.png' style='max-height:275px;height:calc(33vw);'/></div>
+  <div class="g-col-6" style='background-color:{{<brand color plot-primary>}};'><img src='brand-identity/ident_major_plot.png' style='max-height:275px;height:calc(33vw);text-align:right;'/></div>
 
-  <div class="g-col-6" style='text-align:right;background-color:{{<brand color chart-primary>}};padding-bottom:10px;'><img src='brand-identity/ident_major_chart.png' style='max-height:225px;height:calc(33vw);'/></div>
-  <div class="g-col-6" style='background-color:{{<brand color story-primary>}}'><img src='brand-identity/ident_major_story.png' style='max-height:225px;height:calc(33vw);text-align:right;'/></div>
+  <div class="g-col-6" style='text-align:right;background-color:{{<brand color chart-primary>}};padding-bottom:10px;'><img src='brand-identity/ident_major_chart.png' style='max-height:275px;height:calc(33vw);'/></div>
+  <div class="g-col-6" style='background-color:{{<brand color story-primary>}}'><img src='brand-identity/ident_major_story.png' style='max-height:275px;height:calc(33vw);text-align:right;'/></div>
 </div>
 <!--- END: GPCDS Banner --->
 
@@ -44,7 +44,7 @@ include-in-header:
 <div class="grid" style="row-gap:0;">
 <div class="g-col-12 g-col-md-6 p-md-4" style='text-align:center'>
 <span style='text-align:right;font-size:clamp(48px, 4.5vw, 60px);font-family:Futura;color:{{<brand color black-mid>}};'>
-Data visualisation is too big for one category
+Data visualisation is too big for a single category
 </span>
 </div>
 <div class="g-col-12 g-col-md-6 p-md-4 p-12 d-flex align-items-center container">

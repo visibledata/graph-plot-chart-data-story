@@ -48,9 +48,9 @@ color:
     grey-dark: '#656370'
     grey-mid: '#BBBBBD'
     grey-light: '#DCDCDE'
-    ux-blue_mid: '#4464AD'
-    ux-blue_dark: '#2A3E6E'
-    ux-blue_light: '#6B8EF3'
+    ux-blue-mid: '#4464AD'
+    ux-blue-dark: '#2A3E6E'
+    ux-blue-light: '#6B8EF3'
     black-mid: '#4F4F4F'
   background: neutral
   foreground: black
@@ -73,6 +73,7 @@ typography:
 defaults:
   bootstrap:
     defaults:
-      navbar-bg: $brand-black-mid
+      navbar-bg: $brand-ux-blue-dark
+      navbar-fg: "#ffffff"
       footer-bg: $brand-grey-light
       body-bg: "#F9F7F2"
