@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>blog</title>
+<title>Podcast</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,20 +71,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-blog .list');
+    const listingTargetEl = window.document.querySelector('#listing-podcast .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-blog'] = new List('listing-blog', options);
+    window['quarto-listings']['listing-podcast'] = new List('listing-podcast', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -97,17 +97,6 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
-<style>
-.title-block-header {
-  display: none;
-}
-quarto-title-block {
-  display: none;
-}
-.quarto-document-content {
-  padding-top:200px;
-}
-</style>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
@@ -154,6 +143,13 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="styles.scss">
+<meta property="og:title" content="Podcast">
+<meta property="og:description" content="Data visualisation is the best">
+<meta name="twitter:title" content="Podcast">
+<meta name="twitter:description" content="Data visualisation is the best">
+<meta name="twitter:creator" content="@charliejhadley">
+<meta name="twitter:site" content="@charliejhadley">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed">
@@ -210,7 +206,7 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./podcast.html"> <i class="bi bi-broadcast-pin" role="img">
+    <a class="nav-link active" href="./podcast.html" aria-current="page"> <i class="bi bi-broadcast-pin" role="img">
 </i> 
 <span class="menu-text">Podcast</span></a>
   </li>  
@@ -238,31 +234,41 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ZXhwZXJ0">expert <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cG9kY2FzdA==">podcast <span class="quarto-category-count">(1)</span></div></div></div>
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZXhwZXJ0">expert <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cG9kY2FzdA==">podcast <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
 
-
-
-
-<p>You’ll find all of our blogposts and featured articles here.</p>
-<section id="blog" class="level1">
-<h1>Blog</h1>
-<div id="listing-blog" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="cG9kY2FzdCUyQ2V4cGVydA==" data-listing-date-sort="1748732400000" data-listing-file-modified-sort="1745264135888" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
-<div class="thumbnail">
-<p><a href="./posts/2025-06-01/index.html" class="no-external"></a></p><a href="./posts/2025-06-01/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/2025-06-01/index.html" class="no-external"></a></p>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Podcast</h1>
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title" data-anchor-id="blog">
-<a href="./posts/2025-06-01/index.html" class="no-external">Podcast Episode 1: [Surprise Guest]</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2025-06-01/index.html" class="no-external"></a>
-</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Our podcast will launch</p>
+<div id="listing-podcast" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="cG9kY2FzdCUyQ2V4cGVydA==" data-listing-date-sort="1748732400000" data-listing-file-modified-sort="1745264135888" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
+<a href="./posts/2025-06-01/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Podcast Episode 1: [Surprise Guest]
+</h5>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('cG9kY2FzdA=='); return false;">
 podcast
@@ -271,53 +277,20 @@ podcast
 expert
 </div>
 </div>
-<div class="listing-description">
-<a href="./posts/2025-06-01/index.html" class="no-external">It’ll be a surprise</a>
+<div class="card-text listing-description">
+It’ll be a surprise
 </div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Charlotte Hadley
 </div>
-<div class="metadata">
-<a href="./posts/2025-06-01/index.html" class="no-external">
 <div class="listing-date">
 Jun 1, 2025
 </div>
-<div class="listing-author">
-Charlotte Hadley
+</div>
+</div>
 </div>
 </a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="bmV3cw==" data-listing-date-sort="1746054000000" data-listing-file-modified-sort="1745262012602" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="21" data-listing-word-count-sort="4161">
-<div class="thumbnail">
-<p><a href="./posts/2025-05-01/index.html" class="no-external"></a></p><a href="./posts/2025-05-01/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/2025-05-01/gpcds-original-sketches.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/2025-05-01/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2025-05-01/index.html" class="no-external">Welcome to the Graph | Plot | Chart | Data Story Brand</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2025-05-01/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">
-news
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/2025-05-01/index.html" class="no-external">At GPCDS we’re purposefully provoking comparisons to things. To evoke the feeling that everything needed to be categorised and factions exist we wanted to design a cohesive…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2025-05-01/index.html" class="no-external">
-<div class="listing-date">
-May 1, 2025
-</div>
-<div class="listing-author">
-Charlotte Hadley
-</div>
-</a>
-</div>
 </div>
 </div>
 <div class="listing-no-matching d-none">
@@ -327,7 +300,6 @@ No matching items
 
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

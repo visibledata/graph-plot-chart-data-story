@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>blog</title>
+<title>index</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -40,7 +38,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-05fe91a66cf75bbbb8c9664867fe5124.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2120db7d856c62281486adb1ca21424a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-144baaa0f154b2c46cf1399b6c0ceaf6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,35 +66,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-blog .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-blog'] = new List('listing-blog', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>
 .title-block-header {
   display: none;
@@ -108,55 +77,13 @@ quarto-title-block {
   padding-top:200px;
 }
 </style>
+<script src="https://kit.fontawesome.com/a0f522c241.js" crossorigin="anonymous"></script>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.scss">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -237,97 +164,82 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ZXhwZXJ0">expert <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cG9kY2FzdA==">podcast <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
-<p>You’ll find all of our blogposts and featured articles here.</p>
-<section id="blog" class="level1">
-<h1>Blog</h1>
-<div id="listing-blog" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="cG9kY2FzdCUyQ2V4cGVydA==" data-listing-date-sort="1748732400000" data-listing-file-modified-sort="1745264135888" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
-<div class="thumbnail">
-<p><a href="./posts/2025-06-01/index.html" class="no-external"></a></p><a href="./posts/2025-06-01/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/2025-06-01/index.html" class="no-external"></a></p>
+<!--- START: Buffer behind the navbar --->
+<div class="column-screen page-columns page-full" style="margin-top:-102px;">
+<div class="column-screen" style="margin-top:0px;">
+<div class="grid" style="row-gap: 0;column-gap:0;height:80px;width:100vw">
+<div class="g-col-6" style="text-align:right;background-color:#30CED1;">
+<span></span>
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title" data-anchor-id="blog">
-<a href="./posts/2025-06-01/index.html" class="no-external">Podcast Episode 1: [Surprise Guest]</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2025-06-01/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('cG9kY2FzdA=='); return false;">
-podcast
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJ0'); return false;">
-expert
+<div class="g-col-6" style="background-color:#E0BE36;">
+<span></span>
 </div>
 </div>
-<div class="listing-description">
-<a href="./posts/2025-06-01/index.html" class="no-external">It’ll be a surprise</a>
+</div>
+<!--- END: Buffer behind the navbar --->
+<div class="column-screen" style="margin-top:0;">
+<div class="grid" style="row-gap: 0;column-gap:0;">
+<div class="g-col-6" style="text-align:right;background-color:#30CED1;">
+<img src="brand-identity/ident_major_graph.png" style="max-height:225px;height:calc(33vw);">
+</div>
+<div class="g-col-6" style="background-color:#E0BE36;">
+<img src="brand-identity/ident_major_plot.png" style="max-height:225px;height:calc(33vw);text-align:right;">
+</div>
+<div class="g-col-6" style="text-align:right;background-color:#FA8A5B">
+<img src="brand-identity/ident_major_chart.png" style="max-height:225px;height:calc(33vw);">
+</div>
+<div class="g-col-6" style="background-color:#EB526F">
+<img src="brand-identity/ident_major_story.png" style="max-height:225px;height:calc(33vw);text-align:right;">
 </div>
 </div>
-<div class="metadata">
-<a href="./posts/2025-06-01/index.html" class="no-external">
-<div class="listing-date">
-Jun 1, 2025
+<!--- START: Mission statement --->
+<div class="grid" style="row-gap:0;">
+<div class="g-col-12 g-col-md-6 p-md-4" style="text-align:center">
+<p><span style="text-align:right;font-size:clamp(48px, 4.5vw, 60px);font-family:Futura;color:#4F4F4F;"> Data visualisation is too big for one category </span></p>
 </div>
-<div class="listing-author">
-Charlotte Hadley
+<div class="g-col-12 g-col-md-6 p-md-4 p-12 d-flex align-items-center container">
+<p><span style="font-size:clamp(8px, 1.5em, 92px);line-height:1.6;"> We use the sometimes confusing, overlapping and personal opinion laced topics about <strong>graphically representing data</strong> as an opportunity to explore, educate… and have some fun! </span></p>
 </div>
+</div>
+<!--- END: Mission statement --->
+<div class="grid" style="row-gap:0;font-family:Futura;font-size:1.5em;background-color:#DCDCDE;padding-top:20px">
+<div class="g-col-12 g-col-sm-3 p-md-4" style="text-align:center">
+<a href="workshops_overview.html" style="text-decoration:none;">
+<i class="fa-solid fa-screwdriver-wrench" style="color:#1B8385;font-size:2.5em;"></i>
+<p style="color:#1B8385;">Workshops</p>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="bmV3cw==" data-listing-date-sort="1746054000000" data-listing-file-modified-sort="1745262012602" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="21" data-listing-word-count-sort="4161">
-<div class="thumbnail">
-<p><a href="./posts/2025-05-01/index.html" class="no-external"></a></p><a href="./posts/2025-05-01/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/2025-05-01/gpcds-original-sketches.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/2025-05-01/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2025-05-01/index.html" class="no-external">Welcome to the Graph | Plot | Chart | Data Story Brand</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2025-05-01/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">
-news
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/2025-05-01/index.html" class="no-external">At GPCDS we’re purposefully provoking comparisons to things. To evoke the feeling that everything needed to be categorised and factions exist we wanted to design a cohesive…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2025-05-01/index.html" class="no-external">
-<div class="listing-date">
-May 1, 2025
-</div>
-<div class="listing-author">
-Charlotte Hadley
-</div>
+<div class="g-col-12 g-col-sm-3 p-md-4" style="text-align:center">
+<a href="coaching-and-consulting.html" style="text-decoration:none;">
+<i class="fa-solid fa-users-between-lines" style="color:#947A14;font-size:2.5em;"></i>
+<p style="color:#947A14;">Coaching &amp; Consulting</p>
 </a>
 </div>
+<div class="g-col-12 g-col-sm-3 p-md-4" style="text-align:center">
+<a href="blog.html" style="text-decoration:none;">
+<i class="fa-solid fa-newspaper" style="color:#B3542F;font-size:2.5em;"></i>
+<p style="color:#B3542F;">Articles</p>
+</a>
 </div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
+<div class="g-col-12 g-col-sm-3 p-md-4" style="text-align:center">
+<i class="fa-solid fa-podcast" style="color:#9E283D;font-size:2.5em;"></i>
+<p style="color:#9E283D;">Podcast</p>
 </div>
 
+</div>
+</div>
+<p><br></p>
+<p><span style="font-size:clamp(8px, 1.5em, 92px);line-height:1.6;"> We’re soft launching at the moment with lots more coming in Q4 2024… </span></p>
 
 
-</section>
+</div>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
