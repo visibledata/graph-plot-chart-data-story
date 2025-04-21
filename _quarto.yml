@@ -7,7 +7,7 @@ resources:
   - "images/*"
 
 website:
-  title: ""
+  title: "Graph | Plot | Chart | Data Story"
   description: "Data visualisation is the best"
   site-url: https://graphplotchartdatastory.io
   repo-url: https://github.com/visibledata/graph-plot-chart-chart-data-story

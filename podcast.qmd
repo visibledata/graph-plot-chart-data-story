@@ -10,7 +10,7 @@ listing:
     categories: "podcast*"
 ---
 
-Our podcast will launch
+Our podcast will launch Q4 2025.
 
 :::{#podcast}
 :::
