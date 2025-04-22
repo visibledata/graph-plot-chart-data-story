@@ -75,5 +75,6 @@ defaults:
     defaults:
       navbar-bg: $brand-ux-blue-dark
       navbar-fg: "#ffffff"
-      footer-bg: $brand-grey-light
+      footer-bg: $brand-ux-blue-light
+      footer-fg: "#ffffff"
       body-bg: "#F9F7F2"

@@ -88,7 +88,7 @@ We use the sometimes confusing, overlapping and personal opinion laced topics ab
 <br/>
 
 <span style='font-size:clamp(8px, 1.5em, 92px);line-height:1.6;'>
-We're soft launching at the moment with lots more coming in Q4 2024...
+We're soft launching at the moment with lots more coming in Q4 2024.....
 </span>
 
 
