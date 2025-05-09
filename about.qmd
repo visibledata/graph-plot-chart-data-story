@@ -5,8 +5,6 @@ about:
   template: trestles
 ---
 
-# About
-
 Services from GPCDS are provided via the comany Visible Data Ltd (10489177).
 
 We provide workshops, consulting and coaching services.
