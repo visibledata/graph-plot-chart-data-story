@@ -1,9 +1,11 @@
 ---
 title: "About"
-image: profile.jpg
+image: brand-identity/logomark_colour.png
 about:
-  template: jolla
+  template: trestles
 ---
+
+# About
 
 Services from GPCDS are provided via the comany Visible Data Ltd (10489177).
 
@@ -13,6 +15,20 @@ Tickets to workshops have a cancellation policy that you can find via the Ticket
 
 You can contact us at any time via **hello@gpcds.com**
 
-<hr/>
+These details are provided both for your information and to satisfy [Stripe's business website requirements](https://support.stripe.com/questions/business-website-for-account-activation-faq) - which is a great policy. Hello folks 👋
 
-This page is provided both for your information and to satisfy [Stripe's business website requirements](https://support.stripe.com/questions/business-website-for-account-activation-faq) - which is a great policy. Hello folks 👋
+# GenAI Policy
+
+All tech is political. GenAI tools should not be used casually without understanding the deep ethical impacts of the energy use of GenAI, copyright infringement and what it means for creativity.
+
+> We fully support and understand that many of our clients have benefited from all sorts of generative tools. Individuals and companies have the freedom to exercise lifestyle choices the way they see fit.
+
+- We refuse to use image generation tools for throw away content. The energy impact of generating an image used on a single slide is not justifiable - for us it is equivalent to disposable e-waste.
+
+- We refuse to **any** generative images without disclosing their origin.
+
+- We refuse to use GenAI tools for idea generation without disclosing their use, and do not **begin** with GenAI.
+
+- We exercise restraint in the use of generative coding tools. It would be *silly* to refuse to use command completion, auto-correct and other common IDE features. Similarly, refusing to engage with any generative code tools feels reactive. However, vibe coding doesn't align with our desire to truly understand the work and data that we interact with.
+
+- We do not use **any** GenAI tools with clients data, information or ideas without a client specifically requesting them.
