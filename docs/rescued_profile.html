@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.29">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>About – Graph | Plot | Chart | Data Story</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-9cfdc87e16b2bf3d6786c761657ef46f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-0f4041834aa4836099fd8d86b4dcae38.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://kit.fontawesome.com/a0f522c241.js" crossorigin="anonymous"></script>
+
+
+<meta property="og:title" content="About – Graph | Plot | Chart | Data Story">
+<meta property="og:description" content="Data visualisation is the best">
+<meta property="og:site_name" content="Graph | Plot | Chart | Data Story">
+<meta name="twitter:title" content="About – Graph | Plot | Chart | Data Story">
+<meta name="twitter:description" content="Data visualisation is the best">
+<meta name="twitter:creator" content="@charliejhadley">
+<meta name="twitter:site" content="@charliejhadley">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./brand-identity/favicon_32x32.png" alt="" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-workshops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-tools" role="img">
+</i> 
+ <span class="menu-text">Workshops</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-workshops">    
+        <li>
+    <a class="dropdown-item" href="./workshops_overview.html">
+ <span class="dropdown-text">About our workshops</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./workshops_r.html">
+ <span class="dropdown-text">R</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./workshops_data-storytelling.qmd">
+ <span class="dropdown-text">Data Storytelling</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-articles" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Articles</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-articles">    
+        <li>
+    <a class="dropdown-item" href="./blog.html">
+ <span class="dropdown-text">Blog</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dashboards.qmd">
+ <span class="dropdown-text">Dashboards</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./consulting-and-coaching.qmd"> <i class="bi bi-chat-left-quote-fill" role="img">
+</i> 
+<span class="menu-text">Contact us</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./what-it-it.qmd"> <i class="bi bi-patch-question-fill" role="img">
+</i> 
+<span class="menu-text">Graph, Plot, Chart or Data Story?</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">About</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>I’m Charlie Hadley and Visible Data is my data science and training consultancy. My handle elsewhere is almost universally <a href="https://twitter.com/charliejhadley"><span class="citation" data-cites="charliejhadley">@charliejhadley</span></a>.</p>
+<p>I’m an R instructor and data science consultant. This website is as a portfolio of my courses, charts and other things that don’t have a good home elsewhere. I’m also an Open Data and Reproducible Research evangelist.</p>
+<p>All tech is political. Our common future and freedom requires <a href="https://time.com/5560575/intersectionality-theory/">intersectionality</a>.</p>
+<div class="text-center" style="padding-top:10px;padding-bottom:20px;">
+<a class="btn btn-outline-dark" ,="" href="https://twitter.com/charliejhadley" target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-twitter" role="img" aria-label="Twitter"></i>
+</a>
+
+<a class="btn btn-outline-dark" ,="" href="https://github.com/charliejhadley" target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-github" role="img" aria-label="Github"></i>
+</a>
+
+<a class="btn btn-outline-dark" ,="" href="https://orcid.org/0000-0002-3039-6849" target="_blank" rel="noopener noreferrer">
+    <i class="fa-brands fa-orcid"></i>
+</a>
+
+</div>
+<hr>
+<div class="column-page-inset" style="padding-top:10px">
+<div class="container-fluid wide-div">
+<div class="hori-timeline" dir="ltr">
+                    <ul class="list-inline events">
+                        <li class="list-inline-item event-list">
+                            <div class="px-4">
+                                <div class="event-date bg-soft-success text-success">2022</div>
+                                <h6 style="text-align:center;text-decoration: none;" class="anchored">Birmingham City<br>University</h6>
+                                <p style="font-size:14px">Visiting lecturer teaching a MSc in data science in healthcare.</p>
+                                <!--- <div>
+                                    <a href="#" class="btn btn-primary btn-sm">Read more</a>
+                                </div> --->
+                            </div>
+                        </li>
+                        <li class="list-inline-item event-list">
+                            <div class="px-4">
+                                <div class="event-date bg-soft-success text-success">2019</div>
+                                <h6 style="text-align:center;text-decoration: none;" class="anchored">Visble Data<br>Ltd</h6>
+                                <p style="font-size:14px">Full-time independent data science consultant and trainer.</p>
+                            </div>
+                        </li>
+                        <li class="list-inline-item event-list">
+                            <div class="px-4">
+                                <div class="event-date bg-soft-success text-success">2017</div>
+                                <h6 class="anchored">LinkedIn Learning<br>Instructor</h6>
+                                <p style="font-size:14px">Content creator specialising in data science courses.</p>
+                            </div>
+                        </li>
+                        <li class="list-inline-item event-list">
+                            <div class="px-4">
+                                <div class="event-date bg-soft-success text-success">2015</div>
+                                <h6 class="anchored">University of<br>Oxford</h6>
+                                <p style="font-size:14px">Service delivery manager for the Interactive Data Network.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+</div>
+</div>
+<p>I really enjoy talking and delivering workshops about dataviz, R and reproducible research - please do get in touch <strong>charlie@visibledata.co.uk</strong>. The timeline below gives more information about my career changes and a selection of the workshops and talks I’ve given.</p>
+<div class="column-page-inset" style="padding-top:10px">
+<!--- CREDIT: https://www.bootdey.com/snippets/view/timeline-events-area -->
+<section class="timeline_area section_padding_130">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-8 col-lg-6">
+                <!-- Section Heading-->
+                <div class="section_heading text-center">
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <!-- Timeline Area-->
+                <div class="apland-timeline-area">
+                    <!-- Single Timeline Content-->
+                    <div class="single-timeline-area">
+                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                            <p>2022</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <div class="single-timeline-content d-flex" data-wow-delay="0.3s" style="">
+                                    <div class="timeline-icon"><i class="fa-solid fa-person-chalkboard"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 class="anchored">Visiting Lecturer: Birmingham City University</h6>
+                                        <p>In 2022 I'm debuting my MSc module <a href="https://eng7218.netlify.app/" target="_blank">ENG7218 Data Science for Healthcare Applications</a> as a visiting lecturer at Birmingham City University.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <hr style="margin-left:200px;">
+                    <!-- Single Timeline Content-->
+                    <div class="single-timeline-area">
+                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                            <p>2021</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa-solid fa-person-chalkboard"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 class="anchored">R in 3 Months</h6>
+                                        <p>Since 2021 I've been co-instructor on the awesome <a href="https://rfortherestofus.com/3months/" target="_blank">R in 3 Months</a> program, which runs twice a year in the Spring and Fall. Each intake has 50+ students who submit weekly assignments and participate in both synchronous and asynchronous weekly content. I'm primarily responsible for weekly feedback and it's the most fun I have teaching each year. I definitely recommend joining the course.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                            <hr style="margin-left:200px;">
+                    <!-- Single Timeline Content-->
+                    <div class="single-timeline-area">
+                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                            <p>2019</p>
+                        </div>
+                                                <div class="row">
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa-solid fa-briefcase"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 class="anchored">Job change: Full-time self-employed at Visible Data Ltd</h6>
+                                        <p>From mid 2019 I've been working as a full-time independent data science consultant and trainer through my consultancy Visible Data Ltd. I primarily partner with <a href="./training.html#public-courses">third-party training providers</a> but please do get in touch if you would like custom courses directly. Since 2021 I've also been working on consultancy projects via <a href="https://rfortherestofus.com/">R for the Rest of Us</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 class="anchored">R-Ladies: Chicago</h6>
+                                        <p>Talk about <a href="https://www.rladieschicago.org/talk/2019-12-4-meetup/" target="_blank">using R to create interactive data visualisations with htmlwidgets and {shiny}</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-12 col-md-6 col-lg-6">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 class="anchored">DHoxSS 2019</h6>
+                                        <p>Invited talk at DHoxSS about data visualisation to increase research impact.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 class="anchored">BristolR</h6>
+                                        <p>Talk about <a href="https://www.meetup.com/Bristol-R-User-Group/events/256419104/" target="_blank">building reproducible data visualisation workflows with R and {shiny}</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-12 col-md-6 col-lg-6">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa-solid fa-user-gear"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 class="anchored">rstudio::conf workshop</h6>
+                                        <p>As part of my CPD I attended this workshop from RStudio designed to train folks in how to train others to use {shiny}.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                            <hr style="margin-left:200px;">
+                                        <!-- Single Timeline Content-->
+                    <div class="single-timeline-area">
+                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                            <p>2017</p>
+                        </div>
+                                                <div class="row">
+                             <div class="col-12 col-md-12 col-lg-12">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa-solid fa-briefcase"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 class="anchored">Job Change: Service Delivery Manager at University of Oxford</h6>
+                                        <p>After successfully managing the Live Data pilot project I was promoted to Service Delivery Manager for the newly instated <a href="https://idn.it.ox.ac.uk/" target="_blank">Interactive Data Network</a>. The pilot project only provided sufficienct resources for a small-scale service. I was responsible for growing the reputation of the data visualisation service and planning sufficienct instructure to develop an University-wide service.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>     
+                        <div class="row">
+                             <div class="col-12 col-md-12 col-lg-12">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 class="anchored">Conference Host: The Missing Link in Publishing: Interactive Data Viz</h6>
+                                        <p>This conference was designed to launch the <a href="https://idn.it.ox.ac.uk/" target="_blank">Interactive Data Network</a> at University of Oxford. I was responsible for organising and hosting this <a href="https://idn.it.ox.ac.uk/event/missing-link-publishing-interactive-data-visualisation" target="_blank">one day conference</a>, and also delivered a training workshop. The conference invited speakers from the FT, ONS and OPU to discuss how interactive data visualisation is used to engage their audiences and improve the comprehension of data-rich articles.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                        
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa-solid fa-person-chalkboard"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 class="anchored">OSDC Conference Workshop</h6>
+                                        <p>Invited workshop on using R and data visualisations to explore datasets.</p>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-12 col-md-6 col-lg-6">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 class="anchored">Royal Statistical Society Conference</h6>
+                                        <p>Invited one day workshop on using R to build interactive data visualisations to tell stories.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                            <hr style="margin-left:200px;">
+                                                                <div class="single-timeline-area">
+                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                            <p>2016</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 class="anchored">IDCC Conference Talk</h6>
+                                        <p>Submitted talk to the IDCC conference about my successful <a href="https://www.dcc.ac.uk/sites/default/files/documents/IDCC16/Parallel%20C/Session%203/Promoting%20Interactive%20Visualisation%20at%20University%20of%20Oxford%20The%20Live%20Data%20Network.pdf" target="_blank">Live Data pilot project to launch a data visualisation service at University of Oxford</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-12 col-md-6 col-lg-6">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa-solid fa-person-chalkboard"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 class="anchored">DHoxSS Workshop</h6>
+                                        <p>Four day workshop introducing humanities researchers to using the Wolfram Language for analysing and visualising humanities data.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                                                <hr style="margin-left:200px;">
+                    <!-- Single Timeline Content-->
+                    <div class="single-timeline-area">
+                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                            <p>2015</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa-solid fa-briefcase"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 class="anchored">Job change: Research Support Engineer at University of Oxford</h6>
+                                        <p>In 2015 I joined the Research Support team at University of Oxford as a Research Software Engineer. My daily duties involved supporting researchers in reproducible research methods. Early in my employment I was tasked with being project manager for the Live Data project with the aim of launching a data visualisation service for all researchers at Oxford. This project was successful and led to me being promoted to Service Delivery Manager in 2017.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <hr style="margin-left:200px;">
+                    <!-- Single Timeline Content-->
+                    <div class="single-timeline-area">
+                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                            <p>2014</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa-solid fa-person-chalkboard"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 class="anchored">Visiting Lecturer: American University in Cairo</h6>
+                                        <p>As part of a program to roll out teaching with Mathematica across the physical sciences I was invited as a visiting lecturer to the American University in Cairo to train lecturers in the Wolfram Language and the CBM pedagogical approach.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                            <hr style="margin-left:200px;">
+                    <!-- Single Timeline Content-->
+                    <div class="single-timeline-area">
+                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                            <p>2012</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><i class="fa-solid fa-briefcase"></i></div>
+                                    <div class="timeline-text">
+                                        <h6 class="anchored">Job change: Technical Consultant at Wolfram Research</h6>
+                                        <p>In 2012 I joined Wolfram Research as a pre-sales technical consultant. Initially I was primarily responsible for developing and delivering customer-personalised technical demonstrations of Mathematica, including at C-level meetings. I also revamped several of the commercial training courses, and taught on the CQF program. Towards the end of my employment I was a senior consultant working on-site to build products for customers.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+<p><br></p>
+<section id="testimonials" class="level2">
+<h2 class="anchored" data-anchor-id="testimonials">Testimonials</h2>
+<div class="row">
+<div class="col-12 col-md-6 col-lg-6">
+<blockquote class="testimonial blockquote">
+Charlie’s expertise of R made the training session I had absolutely brilliant! We covered a mass of material, without it seeming overwhelming.
+<p class="testimonial-attribution">
+Data Scientist, Insurance Industry
+</p>
+</blockquote>
+</div>
+<div class="col-12 col-md-6 col-lg-6">
+<blockquote class="testimonial blockquote">
+Charlie’s enthusiasm &amp; passion for all things R, are hard not to get caught up in. I will look forward to reading blogs by Charlie and hopefully attending more trainings in the future.
+<p class="testimonial-attribution">
+Benjamin Sutton, Brit Insurance
+</p>
+</blockquote>
+</div>
+</div>
+<div class="row">
+<div class="col-12 col-md-6 col-lg-6">
+<blockquote class="testimonial blockquote">
+Thank you so much Charlie! I’m really impressed with the quality of this course, and I’ll be referring back to certain videos/topics as they come up in my geospatial journey ;) Thanks again!
+<p class="testimonial-attribution">
+Data Scientist, Fishing Industry
+</p>
+</blockquote>
+</div>
+<div class="col-12 col-md-6 col-lg-6">
+<blockquote class="testimonial blockquote">
+Thank you for all the help! I feel like searching the internet for help with R is like looking for a very specific needle across a giant field of haystacks, and you both are the metal detectors that get us where we need to be more quickly.
+<p class="testimonial-attribution">
+Technical Director, Tropical Health
+</p>
+</blockquote>
+</div>
+<div class="col-12 col-md-6 col-lg-6">
+<blockquote class="testimonial blockquote">
+I thank you for the last feedback, I loved it because now I can change the style with css, which I had no idea about. You are a sweetheart, because when I listen to your video I feel light and at peace!
+<p class="testimonial-attribution">
+Researcher, Plant Science
+</p>
+</blockquote>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/graphplotchartdatastory\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>GPCDS is run by Charlotte Hadley <br>Please get in touch!</p>
+</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="./data-ethics_t-and-cs.html">
+<p>Data Ethics and T&amp;Cs</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./faq.qmd">
+<p>FAQ</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./visibledata-redirect.html">
+<p>Visible Data Redirect</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link active" href="./rescued_profile.html" aria-current="page">
+<p>Rescued profile</p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/quarto_pub">
+      <i class="bi bi-twitter" role="img" aria-label="Quarto Twitter">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/quarto-dev/quarto-cli">
+      <i class="bi bi-github" role="img" aria-label="Quarto GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://quarto.org/docs/blog/index.xml">
+      <i class="bi bi-rss" role="img" aria-label="Quarto Blog RSS">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

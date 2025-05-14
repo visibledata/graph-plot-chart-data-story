@@ -9,7 +9,7 @@
 <link>https://graphplotchartdatastory.io/blog.html</link>
 <atom:link href="https://graphplotchartdatastory.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Data visualisation is the best</description>
-<generator>quarto-1.6.39</generator>
+<generator>quarto-1.7.29</generator>
 <lastBuildDate>Sat, 31 May 2025 23:00:00 GMT</lastBuildDate>
 <item>
   <title>Podcast Episode 1: [Surprise Guest]</title>
@@ -770,9 +770,6 @@ background-color: null;
 font-style: inherit;">8</span>)</span></code></pre></div>
 </details>
 </div>
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
@@ -1212,9 +1209,6 @@ font-style: inherit;">height =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">8</span>)</span></code></pre></div>
 </details>
-</div>
-<div>
-
 </div>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
@@ -1765,9 +1759,6 @@ font-style: inherit;">height =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">8</span>)</span></code></pre></div>
 </details>
-</div>
-<div>
-
 </div>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
@@ -2573,9 +2564,6 @@ background-color: null;
 font-style: inherit;">8</span>)</span></code></pre></div>
 </details>
 </div>
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
@@ -2590,9 +2578,6 @@ font-style: inherit;">8</span>)</span></code></pre></div>
 <section id="logomarks" class="level1">
 <h1>Logomarks</h1>
 <p>The logomark is constructed from slightly modified versions of the minor idents - the script for generating the logomarks <a href="https://github.com/visibledata/graph-plot-chart-data-story/blob/master/brand-identity/logomarks.R">can be found on GitHub</a>. There are three different versions of the design:</p>
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout-ncol="3">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
@@ -2625,9 +2610,6 @@ font-style: inherit;">8</span>)</span></code></pre></div>
 <h1>Combination Marks</h1>
 <p>The combination marks were constructed in Canva for simplicity. To provide some <em>meaning</em> to how the lettermark and logomark relate to one another the height of the pipe character has been set to 150px and the logomark is 2 * ϕ * 150px</p>
 <p>The 1:1 and 4:3 ratio combination marks are crops of the same image with a vertical alignment, whereas the 16:9 combination mark is horizontally arranged:</p>
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">

@@ -1,0 +1,77 @@
+---
+title: "Visible Data is now GPCDS"
+title-block-style: none
+toc: false
+image: /social-card.jpg
+resources:
+    - "social-card.jpg"
+include-in-header:
+  - text: |
+      <style>
+      .title-block-header {
+        display: none;
+      }
+      quarto-title-block {
+        display: none;
+      }
+      .quarto-document-content {
+        padding-top:200px;      
+      }
+      </style>
+---
+
+
+
+Welcome! You've arrived here after trying to visit a page from <https://visibledata.co.uk>.
+
+::: aside
+![](brand-identity/visible-data-logo.png){width='50%'}
+
+Visible Data never got past a first draft logo. But that's okay.
+:::
+
+Visible Data was a data consultancy and training organisation run by Charlotte Hadley. In early 2025 Charlie re-launched her services as GPCDS.
+
+You can now contact us via **hello@gpcds.com**
+
+We provide all the same services as before - and more!
+
+<div class="column-screen">
+<div class="grid" style="row-gap:0;font-family:Futura;font-size:1.5em;padding-top:20px">
+<div class="g-col-12 g-col-sm-3 p-md-4" style='text-align:center'>
+<a href="workshops_overview.html" style='text-decoration:none;'>
+<i class="fa-solid fa-screwdriver-wrench" style='color:{{<brand color graph-tertiary>}};font-size:2.5em;'></i>
+<p style='color:{{<brand color graph-tertiary>}};'>Workshops</p>
+</a>
+</div>
+<div class="g-col-12 g-col-sm-3 p-md-4" style='text-align:center'>
+<a href="coaching-and-consulting.html" style='text-decoration:none;'>
+<i class="fa-solid fa-users-between-lines" style='color:{{<brand color plot-tertiary>}};font-size:2.5em;'></i>
+<p style='color:{{<brand color plot-tertiary>}};'>Coaching & Consulting</p>
+</a>
+</div>
+<div class="g-col-12 g-col-sm-3 p-md-4" style='text-align:center'>
+<a href="blog.html" style='text-decoration:none;'>
+<i class="fa-solid fa-newspaper" style='color:{{<brand color chart-tertiary>}};font-size:2.5em;'></i>
+<p style='color:{{<brand color chart-tertiary>}};'>Articles</p>
+</a>
+</div>
+<div class="g-col-12 g-col-sm-3 p-md-4" style='text-align:center'>
+<a href="podcast.html" style='text-decoration:none;'>
+<i class="fa-solid fa-podcast" style='color:{{<brand color story-tertiary>}};font-size:2.5em;'></i>
+<p style='color:{{<brand color story-tertiary>}};'>Podcast</p>
+</a>
+</div>
+</div>
+</div>
+
+<!--- START: GPCDS Banner --->
+<div class="column-screen" style='margin-top:10px;'>
+<div class="grid" style="row-gap: 0;column-gap:0;">
+  <div class="g-col-6" style='text-align:right;background-color:{{<brand color graph-primary>}};padding-top:10px;'><img src='brand-identity/ident_major_graph.png' style='max-height:275px;height:calc(13vw);'/></div>
+  <div class="g-col-6" style='background-color:{{<brand color plot-primary>}};padding-top:10px;'><img src='brand-identity/ident_major_plot.png' style='max-height:275px;height:calc(13vw);text-align:right;'/></div>
+
+  <div class="g-col-6" style='text-align:right;background-color:{{<brand color chart-primary>}};padding-bottom:10px;'><img src='brand-identity/ident_major_chart.png' style='max-height:275px;height:calc(13vw);'/></div>
+  <div class="g-col-6" style='background-color:{{<brand color story-primary>}}'><img src='brand-identity/ident_major_story.png' style='max-height:275px;height:calc(13vw);text-align:right;'/></div>
+</div>
+<!--- END: GPCDS Banner --->

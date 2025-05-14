@@ -31,20 +31,20 @@ website:
       - icon: tools
         text: "Workshops"
         menu:
+          - text: "About our workshops"
+            href: workshops_overview.qmd
           - text: "R"
             href: workshops_r.qmd
           - text: "Data Storytelling"
             href: workshops_data-storytelling.qmd
-          - text: "About our workshops"
-            href: workshops_overview.qm
       - text: "Articles"
         menu:
           - text: "Blog"
             href: blog.qmd
           - text: "Dashboards"
             href: dashboards.qmd
-      - icon: broadcast-pin
-        href: podcast.qmd
+      # - icon: broadcast-pin
+      #   href: podcast.qmd
       - icon: chat-left-quote-fill
         text: "Contact us"
         href: consulting-and-coaching.qmd
@@ -57,10 +57,14 @@ website:
       GPCDS is run by Charlotte Hadley
       <br>Please get in touch!
     center:
-      - text: "About"
-        href: about.qmd
+      - text: "Data Ethics and T&Cs"
+        href: data-ethics_t-and-cs.qmd
       - text: "FAQ"
-        href: docs/faq/index.qmd
+        href: faq.qmd
+      - text: "Visible Data Redirect"
+        href: visibledata-redirect.qmd
+      - text: "Rescued profile"
+        href: profile_charlotte-hadley.qmd
     right:
       - icon: twitter
         href: https://twitter.com/quarto_pub
@@ -74,8 +78,7 @@ website:
 
 format:
   html:
-    theme: default
-    css: styles.scss
+    theme: [default, styles.scss]
     toc: true
     toc-depth: 4
     toc-title: "Contents"
@@ -83,3 +86,5 @@ format:
     # include-in-header:
     #   - includes.html
     highlight-style: tango
+    include-in-header:
+      - includes.html

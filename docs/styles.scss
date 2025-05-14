@@ -1,5 +1,7 @@
 /*-- scss:defaults --*/
 
+$font-family-sans-serif: Karla;
+
 /*-- scss:rules --*/
 
 .wide-div {
@@ -8,3 +10,11 @@
   margin-right: -50px;
 }
 
+h1 {
+  font-family: Futura;
+  color: $brand-graph-secondary;
+}
+
+h2 {
+  font-family: Futura;
+}

@@ -61,6 +61,7 @@ color:
   danger: rag-red
 
 typography:
+  base: Karla
   headings:
     family: Futura
     weight: 700
@@ -77,4 +78,7 @@ defaults:
       navbar-fg: "#ffffff"
       footer-bg: $brand-ux-blue-light
       footer-fg: "#ffffff"
+      body-bg: "#F9F7F2"
+  revealjs:
+    defaults:
       body-bg: "#F9F7F2"
