@@ -28,12 +28,23 @@ h2 {
   display: inline;
 }
 
+.center-v {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
 .nav-footer {
   height: $footer-height;
 }
 
 :root {
   --footer-height: #{$footer-height};
+}
+
+.card {
+  background-color: $brand-grey-light;
 }
 
 // -----------------------------------------------------------------------------
@@ -227,8 +238,8 @@ h2 {
   line-height: 30px;
 }
 .single-timeline-area .single-timeline-content .timeline-text h6 {
-  /*-webkit-transition-duration: 500ms;
-  transition-duration: 500ms; */
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
 }
 .single-timeline-area .single-timeline-content .timeline-text p {
   font-size: 13px;

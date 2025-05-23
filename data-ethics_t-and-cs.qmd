@@ -1,6 +1,7 @@
 ---
-title: "Data Ethics and T&Cs"
+title: "T&Cs and Data Ethics"
 image: brand-identity/logomark_colour.png
+toc-expand: 2
 ---
 
 
@@ -37,3 +38,19 @@ Tickets to workshops have a cancellation policy that you can find via the Ticket
 You can contact us at any time via **hello@gpcds.com**
 
 These details are provided both for your information and to satisfy [Stripe's business website requirements](https://support.stripe.com/questions/business-website-for-account-activation-faq) - which is a great policy. Hello folks 👋
+
+## Ticket Refund Policy
+
+Unless otherwise stated in your ticket, our default refunds policy is as follows:
+
+- If notice is provided 
+  
+  - within 21 days or more in advance you will receive a full refund, less a £30 administration fee.
+
+  - within 14 days or more you will be charged 50% of the ticket price, plus a £30 administration fee
+
+  - less than 14 days you will not receive a refund.
+
+- Non-attendance will be charged at the full rate.
+
+- If the unexpected happens, please contact hello@gpcds.com. If possible, we'll transfer your bookings to another workshop.

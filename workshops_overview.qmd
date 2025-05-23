@@ -1,5 +1,137 @@
 ---
-title: "Workshops"
+title: "About our workshops"
+toc: true
 ---
 
-We have two types of workshop.
+We run a wide range of engaging, hands-on workshops where we live code and customise on the fly for our learners. Workshops are about the experience - not recycling the same  dry content.
+
+You can find [all our workshops on TicketTailor](https://www.tickettailor.com/events/graphplotchartdatastory), they roughly fall into these two buckets.
+
+:::: {.grid .column-screen-inset}
+
+::: {.g-col-12 .g-col-md-6 .card}
+::: {.card-body}
+<span style='font-family:Futura;text-transform:uppercase;color:{{<brand color primary>}};font-size:clamp(16px,2.8vw,40px);'>Data visualisation (tool agnostic)</span>
+<img src='brand-identity/logomark_detailed_colour.png' style='float:right;padding-left:10px;width: clamp(140px, 15vw, 250px)'/>
+<p>Our dataviz workshops are practical, focused and driven by quantitative research into what works (and why). We promise you'll have a unique experience.</p>
+<a href="https://www.linkedin.com/learning/instructors/charlie-joey-hadley?u=2125562" target="_blank" class="stretched-link"></a>
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6  .card}
+::: {.card-body}
+<span style='font-family:Futura;text-transform:uppercase;color:{{<brand color primary>}};font-size:clamp(16px,2.8vw,40px);'>R Language Workshops</span>
+<img src='brand-identity/r-logo_story_colours.png' style='float:right;padding-left:10px;width: clamp(140px, 15vw, 250px);' class="center-v"/>
+<p>We've got R workshops on {ggplot2}, {shiny}, and more! Come along to our unique, hands-on workshops and we promise you'll catch our enthusiasm for R.</p>
+:::
+:::
+::::
+
+
+# Meet our trainer
+
+::: {.grid .column-screen-inset}
+
+::: {.g-col-4}
+![](images/profile-pic_charotte-hadley.JPG){.img-circle width='152vw'}
+
+
+<i class="fa-solid fa-person-walking-luggage" aria-label="graduation-cap"></i> Charlotte Jane Hadley 
+<br>
+<i class="fa-solid fa-transgender" aria-label="graduation-cap"></i> She/Her 
+<br>
+<i class="fa-solid fa-at" aria-label="at"></i> charliejhadley
+<br> 
+<i class="fa-brands fa-orcid" aria-label="envelope"></i> 0000-0002-3039-6849<br> 
+
+
+:::
+
+::: {.g-col-8}
+
+### Hey - I'm Charlie! 🙋‍♀️
+
+I've been coaching and training in data science across academia, industry and as an independent consultant since 2012.
+
+```{=html}
+<div style='padding-top:10px;'>
+<div class="hori-timeline" dir="ltr">
+                    <ul class="list-inline events">
+                        <li class="list-inline-item event-list">
+                            <div class="px-4">
+                                <div class="event-date bg-soft-success text-success">2012</div>
+                                <img src='images/logo_wolfram-language.png' height='52vw'/>
+                                <!-- <h6 style='text-align:center;text-decoration: none;'>Senior Consultant</h6> -->
+                                <!--- <div>
+                                    <a href="#" class="btn btn-primary btn-sm">Read more</a>
+                                </div> --->
+                            </div>
+                        </li>
+                        <li class="list-inline-item event-list">
+                            <div class="px-4">
+                                <div class="event-date bg-soft-success text-success">2015</div>
+                                <img src='images/logo_university-of-oxford.webp' height='52vw'/>
+                                <!-- <h6 style='text-align:center;text-decoration: none;'>Research Software Engineer</h6> -->
+                            </div>
+                        </li>
+                        <li class="list-inline-item event-list">
+                            <div class="px-4">
+                                <div class="event-date bg-soft-success text-success">2017</div>
+                                <img src='images/logo_linked-in.png' height='52vw'/>
+                                <!-- <h6>Data Science<br>Instructor</h6> -->
+                            </div>
+                        </li>
+                        <li class="list-inline-item event-list">
+                            <div class="px-4">
+                                <div class="event-date bg-soft-success text-success">2022</div>
+                                <img src='images/logo_admiral.png' height='52vw'/>
+                                <!-- <h6>University of<br>Oxford</h6> -->
+                            </div>
+                        </li>
+                        <li class="list-inline-item event-list">
+                            <div class="px-4">
+                                <div class="event-date bg-soft-success text-success">2025</div>
+                                <img src='brand-identity/logomark_detailed_colour.png' height='52vw'/>
+                                <!-- <h6>University of<br>Oxford</h6> -->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+</div>
+```
+
+Charlie blends enthusiasm, honesty and a conviction that she'll only train things she properly understands. Read more about Charlie work in [her full profile](profile_charlotte_hadley).
+
+Fancy getting in touch? Say **hello@gpcds.com**.
+
+:::
+
+:::
+
+## Tickets and T&CS
+
+::: {.grid .column-screen-inset}
+
+::: {.g-col-12 .g-col-md-7}
+- Our workshops are delivered by [our trainer Charlotte Hadley](#meet-our-trainer)
+
+- We run in-person and online workshops.
+    
+    - Online workshops are hosted via Zoom.
+
+    - In-person workshops will also provide accessibility information.
+
+- Some of our workshops are **limited to 6 people**. This means our instructor Charlotte can focus on you and your questions. Why 6? It's an [R Easter Egg](https://forum.posit.co/t/why-does-head-show-6-rows-by-default/3259/5).
+
+- Tickets are sold via the [**awesome** Ticket Tailor service](https://www.tickettailor.com/events/graphplotchartdatastory). They're an environmentally friendly B Corp. Consider switching to them yourself!
+
+- Unless otherwise stated in your ticket, we have a [default refunds policy](data-ethics_t-and-cs.html#ticket-refund-policy).
+:::
+
+::: {.g-col-12 .g-col-md-5}
+<!-- Ticket Tailor Widget. Paste this into your website where you want the widget to appear. Do not change the code or the widget may not work properly. -->
+<div class="tt-widget"><div class="tt-widget-fallback"><p><a href="https://www.tickettailor.com/all-tickets/graphplotchartdatastory/?ref=website_widget&show_search_filter=true&show_date_filter=true&show_sort=true" target="_blank">Click here to buy tickets</a><br /><small><a href="https://www.tickettailor.com?rf=wdg_244740" class="tt-widget-powered">Sell tickets online with Ticket Tailor</a></small></p></div><script src="https://cdn.tickettailor.com/js/widgets/min/widget.js" data-url="https://www.tickettailor.com/all-tickets/graphplotchartdatastory/?ref=website_widget&show_search_filter=true&show_date_filter=true&show_sort=true" data-type="inline" data-inline-minimal="false" data-inline-show-logo="false" data-inline-bg-fill="true" data-inline-inherit-ref-from-url-param="" data-inline-ref="website_widget"></script></div><!-- End of Ticket Tailor Widget -->
+:::
+:::
+
+
