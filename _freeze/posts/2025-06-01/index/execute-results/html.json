@@ -1,0 +1,15 @@
+{
+  "hash": "a676aac8d25ed8576c63d3dddd5cc2b3",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Starwars\"\nauthor: \"Charlotte Hadley\"\ndate: \"2025-06-01\"\nexecute:\n  echo: false\n  warning: false\n  message: false\n---\n\n\n::: {.cell}\n\n:::\n\n\n# Plots\n\n## Heights\n\n\n::: {.cell}\n\n:::\n\n\n\n::: {.cell}\n\n:::\n\n\n\n::: {.cell}\n\n:::\n\n\n## Charts\n\n\n::: {.cell}\n\n:::\n\n\n# Story\n\nThis doesn't feel like a chart!! It takes time to take it in!!\n\n\n::: {.cell}\n\n:::\n\n\n\n# Graph\n\n\n::: {.cell}\n\n:::\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

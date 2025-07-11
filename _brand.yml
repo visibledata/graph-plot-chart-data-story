@@ -64,7 +64,7 @@ typography:
   base: Karla
   headings:
     family: Futura
-    weight: 700
+    weight: 400
     color: primary
 
   link:

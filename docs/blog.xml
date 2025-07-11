@@ -12,7 +12,7 @@
 <generator>quarto-1.7.29</generator>
 <lastBuildDate>Sat, 31 May 2025 23:00:00 GMT</lastBuildDate>
 <item>
-  <title>Podcast Episode 1: [Surprise Guest]</title>
+  <title>Starwars</title>
   <dc:creator>Charlotte Hadley</dc:creator>
   <link>https://graphplotchartdatastory.io/posts/2025-06-01/</link>
   <description><![CDATA[ 
@@ -21,13 +21,26 @@
 
 
 
-<p>It’ll be a surprise</p>
+<section id="plots" class="level1">
+<h1>Plots</h1>
+<section id="heights" class="level2">
+<h2 class="anchored" data-anchor-id="heights">Heights</h2>
+</section>
+<section id="charts" class="level2">
+<h2 class="anchored" data-anchor-id="charts">Charts</h2>
+</section>
+</section>
+<section id="story" class="level1">
+<h1>Story</h1>
+<p>This doesn’t feel like a chart!! It takes time to take it in!!</p>
+</section>
+<section id="graph" class="level1">
+<h1>Graph</h1>
 
 
+</section>
 
  ]]></description>
-  <category>podcast</category>
-  <category>expert</category>
   <guid>https://graphplotchartdatastory.io/posts/2025-06-01/</guid>
   <pubDate>Sat, 31 May 2025 23:00:00 GMT</pubDate>
 </item>

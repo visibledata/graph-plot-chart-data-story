@@ -6,6 +6,11 @@ cols_gpcds <- as.list(deframe(select(colours_gpcds, name, hex_code)))
 
 rlogo_original_chr <- readLines("brand-identity/r-logo_original.svg")
 
+
+rlogo_original_chr %>% 
+charToRaw() %>% 
+  rsvg_png(file = "brand-identity/r-logo_original.png")
+
 col_rlogo_ring_light <- "#cbced0"
 col_rlogo_ring_dark <- "#84838b"
 

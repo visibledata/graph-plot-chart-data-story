@@ -1,12 +1,274 @@
 ---
-title: "Podcast Episode 1: [Surprise Guest]"
+title: "Starwars"
 author: "Charlotte Hadley"
 date: "2025-06-01"
-categories: [podcast, expert]
 execute:
   echo: false
   warning: false
   message: false
 ---
 
-It'll be a surprise
+```{r}
+library("cjhRutils")
+library("GPCDStools")
+library("tidyverse")
+library("ggtext")
+
+starwars <- starwars %>% 
+  mutate(species_group = case_when(
+    species == "Human" ~ "Human",
+    species == "Droid" ~ "Droid",
+    TRUE ~ "Other"
+  ))
+
+cols_gpcds <- colours_gpcds %>% 
+  select(name, hex_code) %>% 
+  deframe() %>% 
+  as.list()
+
+cols_species_groups <- c("Human" =  cols_gpcds$graph_primary,
+                                 "Other" = cols_gpcds$plot_primary,
+                                 "Droid" = cols_gpcds$story_primary)
+
+```
+
+# Plots
+
+## Heights
+
+```{r}
+gg_barcode <- starwars %>% 
+  ggplot() +
+  aes() +
+  geom_vline(aes(xintercept = height / 100,
+                 colour = species_group),
+             linewidth = 1,
+             show.legend = FALSE) +
+  geom_vline(xintercept = c(0.5, 2.8),
+             colour = cols_gpcds$grey_mid) +
+  labs(title = str_glue("Heights of <span style='color:{cols_gpcds$graph_primary}'>humans</span>, <span style='color:{cols_gpcds$story_primary}'>droids</span> and <span style='color:{cols_gpcds$plot_primary}'>others</span> from the dplyr::starwars dataset")) +
+  scale_x_continuous(limits = c(0.5, 2.8),
+                     breaks = c(0.5, 1, 1.5, 2, 2.5, 2.8), 
+                     minor_breaks = c(1.5),
+                     labels = c("0.5m", "1m", "1.5m", "2m", "", "2.8m")) +
+  scale_colour_manual(values = cols_species_groups) +
+  theme_minimal(base_family = "Futura") +
+  theme(axis.text.x = element_text(size = 22, colour = cols_gpcds$black_alterative),
+        panel.grid = element_blank(),
+        plot.title = element_markdown(size = 44, colour = cols_gpcds$black_alterative),
+        axis.ticks = element_line(colour = cols_gpcds$grey_mid),
+        axis.line.x = element_line(colour = cols_gpcds$grey_mid), plot.margin = margin(t = 10, b = 5, l = 5.5, r = 5.5)
+        )
+
+gg_barcode %>% 
+  ggsave(quarto_here("starwars_barcode.png"),
+         .,
+         height = 2,
+         width = 20,
+         bg = "#F9F7F2")
+```
+
+```{r}
+gg_dotplot <- starwars %>% 
+  arrange(height) %>% 
+  ggplot() +
+  aes() +
+  geom_point(aes(x = height / 100,
+                 y = "",
+                 fill = species_group),
+             size = 3.5,
+             colour = cols_gpcds$grey_dark,
+             linewidth = 1,
+             pch = 21,
+             show.legend = FALSE) +
+  # geom_vline(xintercept = c(0.5, 2.8),
+  #            colour = cols_gpcds$grey_mid) +
+  labs(title = str_glue("Heights of <span style='color:{cols_gpcds$graph_primary}'>humans</span>, <span style='color:{cols_gpcds$story_primary}'>droids</span> and <span style='color:{cols_gpcds$plot_primary}'>others</span> from the dplyr::starwars dataset")) +
+  scale_x_continuous(limits = c(0.5, 2.8),
+                     breaks = c(0.5, 1, 1.5, 2, 2.5, 2.8), 
+                     minor_breaks = c(1.5),
+                     labels = c("0.5m", "1m", "1.5m", "2m", "", "2.8m")) +
+  scale_fill_manual(values = cols_species_groups) +
+  theme_minimal(base_family = "Futura") +
+  theme(axis.text.x = element_text(size = 22, colour = cols_gpcds$black_alterative),
+        panel.grid = element_blank(),
+        plot.title = element_markdown(size = 44, colour = cols_gpcds$black_alterative),
+        axis.line.y = element_blank(),
+        axis.title = element_blank(),
+        axis.ticks = element_line(colour = cols_gpcds$grey_mid),
+        axis.line.x = element_line(colour = cols_gpcds$grey_mid), plot.margin = margin(t = 10, b = 5, l = 5.5, r = 5.5)
+        )
+
+gg_dotplot %>% 
+  ggsave(quarto_here("starwars_dotplot.png"),
+         .,
+         height = 2,
+         width = 20,
+         bg = "#F9F7F2")
+```
+
+```{r}
+gg_stickless_lollipop <- starwars %>% 
+  group_by(species_group) %>% 
+  slice_min(height, n = 3) %>% 
+  reframe(height, 
+          name,
+          mean_height = mean(height)) %>% 
+  mutate(species_group = fct_reorder(species_group, mean_height),
+         species_group = fct_rev(species_group),
+         name = fct_reorder(name, height),
+         name = fct_rev(name)) %>% 
+  ggplot() +
+  aes(x = name,
+      y = height / 100,
+      fill = species_group) +
+  geom_point(pch = 21,
+             size = 5,
+             show.legend = FALSE) +
+  # geom_hline(yintercept = 1.25) +
+  # facet_wrap(~species_group, scales = "free_x") +
+  scale_x_discrete(labels = label_wrap_gen(10)) +
+  scale_y_continuous(limits = c(0.5, 1.8),
+                     expand = c(0, 0),
+                     breaks = c(0.5, 1, 1.5, 1.8),
+                     labels = c("0.5m", "1m", "1.5m", "1.8m")) +
+    scale_fill_manual(values = cols_species_groups) +
+  labs(title = str_glue("The 3 shortest <span style='color:{cols_gpcds$graph_primary}'>human</span>, <span style='color:{cols_gpcds$story_primary}'>droid</span> and <span style='color:{cols_gpcds$plot_primary}'>other</span> characters<br>from the dplyr::starwars dataset"),
+       x = NULL,
+       y = NULL) +
+  theme_minimal(base_size = 15, base_family = "Futura") +
+  theme(plot.title = element_markdown(size = 28, colour = cols_gpcds$black_alterative),
+        panel.grid = element_blank(),
+        strip.text = element_blank(),
+        panel.grid.major.y = element_line(cols_gpcds$grey_light),
+        axis.line.y = element_line(colour = cols_gpcds$grey_mid),
+        axis.ticks.y = element_line(colour = cols_gpcds$grey_mid),
+        axis.line.x = element_line(colour = cols_gpcds$grey_light))
+
+gg_stickless_lollipop %>% 
+  ggsave(quarto_here("starwars_stickless_lollipop.png"),
+         .,
+         width = 10,
+         height = 5,
+         bg = "#F9F7F2")
+```
+
+## Charts
+
+```{r}
+gg_lollipop <- starwars %>% 
+  group_by(species_group) %>% 
+  slice_min(height, n = 3) %>% 
+  reframe(height, 
+          name,
+          mean_height = mean(height)) %>% 
+  mutate(species_group = fct_reorder(species_group, mean_height),
+         species_group = fct_rev(species_group),
+         name = fct_reorder(name, height),
+         name = fct_rev(name)) %>% 
+  ggplot() +
+  aes(x = name,
+      y = height / 100,
+      fill = species_group) +
+  geom_segment(aes(x = name, xend = name, y = 0, yend = height / 100), 
+               colour = cols_gpcds$grey_dark) +
+  geom_point(pch = 21,
+             size = 5,
+             show.legend = FALSE) +
+  # geom_hline(yintercept = 1.25) +
+  # facet_wrap(~species_group, scales = "free_x") +
+  scale_x_discrete(labels = label_wrap_gen(10)) +
+  scale_y_continuous(limits = c(0, 1.8),
+                     expand = c(0, 0),
+                     breaks = c(0.5, 1, 1.5, 1.8),
+                     labels = c("0.5m", "1m", "1.5m", "1.8m")) +
+    scale_fill_manual(values = cols_species_groups) +
+  labs(title = str_glue("The 3 shortest <span style='color:{cols_gpcds$graph_primary}'>human</span>, <span style='color:{cols_gpcds$story_primary}'>droid</span> and <span style='color:{cols_gpcds$plot_primary}'>other</span> characters<br>from the dplyr::starwars dataset"),
+       x = NULL,
+       y = NULL) +
+  coord_cartesian(ylim = c(0.5, 1.8)) +
+  theme_minimal(base_size = 15, base_family = "Futura") +
+  theme(plot.title = element_markdown(size = 28, colour = cols_gpcds$black_alterative),
+        panel.grid = element_blank(),
+        strip.text = element_blank(),
+        panel.grid.major.y = element_line(cols_gpcds$grey_light),
+        axis.line.y = element_line(colour = cols_gpcds$grey_mid),
+        axis.ticks.y = element_line(colour = cols_gpcds$grey_mid),
+        axis.line.x = element_line(colour = cols_gpcds$grey_light))
+
+gg_lollipop %>% 
+  ggsave(quarto_here("starwars_lollipop.png"),
+         .,
+         width = 10,
+         height = 5,
+         bg = "#F9F7F2")
+```
+
+# Story
+
+This doesn't feel like a chart!! It takes time to take it in!!
+
+```{r}
+gg_notquite_barchart <- starwars %>% 
+  count(species_group) %>%
+  mutate(species_group = fct_reorder(species_group, n),
+         species_group = fct_rev(species_group),
+         perc = n / sum(n)) %>% 
+  ggplot() +
+  aes(x = species_group,
+      y = n,
+      fill = species_group) +
+  geom_col(show.legend = FALSE, width = 1) +
+  geom_richtext(aes(
+    y = ifelse(species_group == "Droid",
+               n + 7,
+               n - 8),
+    text.colour = case_when(species_group == "Droid" ~ cols_gpcds$story_tertiary_darker,
+                            species_group == "Other" ~ cols_gpcds$plot_tertiary_darker,
+                            species_group == "Human" ~ cols_gpcds$graph_tertiary_darker,
+               TRUE ~ "#F9F7F2"),
+    label = str_glue("{species_group}<br>({n}, {scales::label_percent()(perc)})")),
+    family = "Futura",
+    size = 10,
+    fill = NA,
+    colour = NA,
+    show.legend = FALSE) +
+  annotate("richtext",
+           x = 1.5,
+                y = 46 - 4,
+                label = "Most characters in dplyr::starwars<br/>are species diverse",
+                hjust = 0,
+               text.colour = cols_gpcds$plot_tertiary_darker,
+               colour = NA,
+               fill = NA,
+               family = "Futura",
+               size = 7) +
+  guides(colour = guide_none()) +
+  scale_colour_identity() +
+  scale_y_continuous(expand = c(0,0)) +
+  scale_x_discrete(expand = c(0, 0)) +
+  scale_fill_manual(values = cols_species_groups) +
+    labs(x = NULL,
+       y = NULL) +
+  labs(title = "THESE AREN'T THE DROIDS YOU'RE LOOKING FOR...") +
+  theme_void(base_family = "Futura") +
+  theme(plot.title = element_markdown(colour = cols_gpcds$black_alterative, size = 28,
+                                      margin=margin(b = 10, l = 5.5)),
+        plot.margin = margin(t = 10, b = 0, l = 0, r = 0))
+
+gg_notquite_barchart %>% 
+    ggsave(quarto_here("starwars_notquite_barchart.png"),
+         .,
+         width = 10,
+         height = 4,
+         bg = "#F9F7F2")
+```
+
+
+# Graph
+
+```{r}
+library("tidygraph")
+library("ggraph")
+```
+
