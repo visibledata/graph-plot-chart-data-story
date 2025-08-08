@@ -49,11 +49,19 @@ Data visualisation is too big for a single category
 </div>
 <div class="g-col-12 g-col-md-6 p-md-4 p-12 d-flex align-items-center container">
 <span style='font-size:clamp(8px, 1.5em, 92px);line-height:1.6;'>
-We use the sometimes confusing, overlapping and personal opinion laced topics about **graphically representing data** as an opportunity to explore, educate... and have some fun!
+<!-- We use the sometimes confusing, overlapping and personal opinion laced topics about **graphically representing data** as an opportunity to explore, educate... and have some fun! -->
+Data storytelling is essential but it doesn't cover everything you should be doing do with the **graphical representation of data**. 
 </span>
 </div>
 </div>
+</div>
 <!--- END: Mission statement --->
+
+::: {.card}
+
+HEY
+
+:::
 
 <div class="grid" style="row-gap:0;font-family:Futura;font-size:1.5em;background-color:{{<brand color grey-light>}};padding-top:20px">
 <div class="g-col-12 g-col-sm-3 p-md-4" style='text-align:center'>

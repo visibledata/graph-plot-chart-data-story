@@ -9,7 +9,7 @@ execute:
   message: false
 ---
 
-At GPCDS we're purposefully provoking comparisons to things. To evoke the feeling that everything needed to be categorised and factions exist we wanted to design a cohesive colour palette that gels well but also has clear distinctions within it. Let's meet the GPCDS palette, brand idents and the logomarks.
+At GPCDS we're purposefully provoking comparisons and challenging assumptions within the field of data visualisation. To evoke the feeling that everything *could* be categorised and factions exist we wanted to design a cohesive colour palette that gels well but also has clear distinctions within it. Let's meet the GPCDS palette, idents, logos and wider brand.
 
 ::: aside
 ![](gpcds-original-sketches.png)
@@ -25,7 +25,6 @@ The primary colours of each category were chosen through the excellent interacti
 library("tidyverse")
 library("GPCDStools")
 library("patchwork")
-library("cjhRutils")
 library("ggtext")
 
 cols_gpcds <- as.list(deframe(select(colours_gpcds, name, hex_code)))
@@ -62,7 +61,8 @@ gg_gpcds_colour_palette <- colours_gpcds %>%
                                    str_to_title(c("primary", "secondary", "tertiary", "tertiary lighter", "tertiary darker"))),
          
          category = fct_relevel(str_to_title(category),
-                                c("Graph", "Plot", "Chart", "Story", "Other"))) %>% 
+                                c("Graph", "Plot", "Chart", "Story", "Other")),
+         category = fct_rev(category)) %>% 
   make_palette_grid()
 
 gg_gpcds_colour_palette %>% 
@@ -149,6 +149,8 @@ As the idents are intended to be displayed in their "four-wise arrangement" they
   <div class="g-col-6" style='text-align:right;background-color:{{<brand color chart-primary>}}'><img src='gg_chart_ident_major.png' style='max-height:200px'/></div>
   <div class="g-col-6" style='background-color:{{<brand color story-primary>}}'><img src='gg_story_ident_major.png' style='max-height:200px;text-align:right;'/></div>
 </div>
+
+### Graphs
 
 The **graph idents** are simple graphs. In the major graph the edges are either at 180 or 60 degrees to one another, and the closed triad is placed to draw the reader to the cente of the four-wise arrangement.
 
@@ -278,11 +280,11 @@ ggsave(quarto_here("gg_graph_ident_minor.png"),
        height = 8)
 ```
 
-::: {layout-ncol=2}
-![](gg_graph_ident_major.png){width=50%}
+<center>![](gg_graph_ident_major.png){width=250px}
+![](gg_graph_ident_minor.png){width=250px}
+</center>
 
-![](gg_graph_ident_minor.png){width=50%}
-:::
+### Plots
 
 The **plot idents** are inspired by scatter plots. In the major ident the disks are placed on the line `y = -x` to enclose the idents in the four-wise arrangement. The word "plot" is displayed in the top-right corner as that's the placement of the ident in the four-wise arrangement.
 
@@ -358,11 +360,11 @@ ggsave(quarto_here("gg_plot_ident_minor.png"),
        height = 8)
 ```
 
-::: {layout-ncol=2}
-![](gg_plot_ident_major.png){width=50%}
+<center>![](gg_plot_ident_major.png){width=250px}
+![](gg_plot_ident_minor.png){width=250px}
+</center>
 
-![](gg_plot_ident_minor.png){width=50%}
-:::
+### Charts
 
 The **chart idents** are inspired by bubble charts, but could also be interpeted as something more complex. In the major ident all four of the smaller disks are placed on the lines `y = ± x` with the top-right disk placed off the "bubble" to bring the viewer's gaze to the centre of the four-wise arrangement. 
 
@@ -467,11 +469,11 @@ ggsave(quarto_here("gg_chart_ident_minor.png"),
        height = 8)
 ```
 
-::: {layout-ncol=2}
-![](gg_chart_ident_major.png){width=50%}
+<center>![](gg_chart_ident_major.png){width=250px}
+![](gg_chart_ident_minor.png){width=250px}
+</center>
 
-![](gg_chart_ident_minor.png){width=50%}
-:::
+### Data Stories
 
 The **data story idents** are designed to imply movement and include arrows which are not found in any other ident. In the major ident the arrows point to the centre of the ident itself instead of a position within the four-wise arrangement - to indicate that the story sometimes need to be centered over design.
 
@@ -606,30 +608,155 @@ ggsave(quarto_here("gg_story_ident_minor.png"),
        height = 8)
 ```
 
-::: {layout-ncol=2}
-![](gg_story_ident_major.png){width=50%}
+<center>![](gg_story_ident_major.png){width=250px}
+![](gg_story_ident_minor.png){width=250px}
+</center>
+# Logos
 
-![](gg_story_ident_minor.png){width=50%}
-:::
+We went through many iterations of our logo where we tried to include the same design elements as the idents but they were too complex. Through lots of sketches we arrived at this triplet of full colour, black on white and white on black logos.
 
-# Logomarks
+::: aside 
 
-The logomark is constructed from slightly modified versions of the minor idents - the script for generating the logomarks [can be found on GitHub](https://github.com/visibledata/graph-plot-chart-data-story/blob/master/brand-identity/logomarks.R). There are three different versions of the design:
-
-::: {layout-ncol=3}
+An older generation of our logo with far too much going on.
 
 ![](../../brand-identity/logomark_colour.png)
 
-![](../../brand-identity/logomark_black_on_white.png)
-
-![](../../brand-identity/logomark_white_on_black.png)
 :::
 
-There are two cricisms of the first generation logomarks:
+```{r}
+#| label: logo-colour
+#| code-fold: true
+#| echo: true
 
-- In the colour logomark the arrows in the story section do not have a lineend on the non-arrow size. This is a limitation of the curve geom.
+x0_small_dot_center <- 500 + (1000 / (1.618 * 2 * sqrt(2)))
+r_small_dot <- 1000 / {1.618 * 2 * 3}
+linewidth_circles <- 5
 
-- There are slight inconsistencies in the linewidth of some elements due to how they're calculated in {ggplot2}. In an ideal world all lines would have the same width. 
+degree_change <- 8
+func_graph_line  <- function(x) tan({45 + degree_change} * pi / 180) * x + r_small_dot + linewidth_circles * 2
+
+func_story_line  <- function(x) tan({45 - degree_change} * pi / 180) * x - tan({45 - degree_change} * pi / 180) * {r_small_dot + linewidth_circles * 2}
+
+gg_logo_colour <- ggplot() +
+  aes(xmin = -1000, xmax = 2000, y = -1000, ymax = 2000) +
+  geom_ribbon(stat = 'function', fun = func_story_line,
+              mapping = aes(ymin = after_stat(y), ymax = Inf, x = 1000),
+              fill = cols_gpcds$other_primary) +
+  geom_ribbon(stat = 'function', fun = func_graph_line,
+              mapping = aes(ymin = after_stat(y), ymax = Inf, x = 1000),
+              fill = cols_gpcds$graph_primary) +
+  geom_ribbon(stat = 'function', fun = func_story_line,
+              mapping = aes(ymin = after_stat(y), ymax = -Inf, x = 1000),
+              fill = cols_gpcds$story_primary) +
+  # geom_function(fun = func_story_line,
+  #               colour = cols_gpcds$story_tertiary_darker,
+  #               linewidth = linewidth_circles) +
+  # geom_function(fun = func_graph_line,
+  #               colour = cols_gpcds$story_tertiary_darker,
+  #               linewidth = linewidth_circles) +
+  geom_circle(aes(x0 = 500,
+           y0 = 500,
+           r = 1000 / {1.618 * 2}),
+           fill = cols_gpcds$chart_primary, 
+           linewidth = linewidth_circles,
+           # linewidth = 0,
+           colour = cols_gpcds$story_tertiary_darker) +
+  geom_circle(aes(
+    x0 = x0_small_dot_center,
+    y0 = x0_small_dot_center,
+    r = r_small_dot),
+    fill = cols_gpcds$plot_primary,
+    linewidth = linewidth_circles,
+    linewidth = 0,
+    colour = cols_gpcds$story_tertiary_darker) +
+  scale_x_continuous(expand = c(0, 0)) +
+  scale_y_continuous(expand = c(0, 0)) +
+  coord_fixed(xlim = c(0, 1000),
+                  ylim = c(0, 1000)) +
+  theme_void()
+```
+
+```{r}
+#| label: logo-black-on-white
+#| code-fold: true
+#| echo: true
+gg_logo_black_on_white <- ggplot() +
+  aes(xmin = 0, xmax = 10, y = 0, ymax = 10) +
+  geom_ribbon(stat = 'function', fun = func_story_line,
+              mapping = aes(ymin = after_stat(y), ymax = Inf, x = 1000),
+              fill = cols_gpcds$black_alterative) +
+  geom_ribbon(stat = 'function', fun = func_graph_line,
+              mapping = aes(ymin = after_stat(y), ymax = Inf, x = 1000),
+              fill = "white") +
+  geom_ribbon(stat = 'function', fun = func_story_line,
+              mapping = aes(ymin = after_stat(y), ymax = -Inf, x = 1000),
+              fill = "white") +
+  geom_circle(aes(x0 = 500,
+                  y0 = 500,
+                  r = 1000 / {1.618 * 2}),
+              fill = cols_gpcds$black_alterative, 
+              linewidth = linewidth_circles,
+              colour = "white") +
+  geom_circle(aes(
+    x0 = x0_small_dot_center,
+    y0 = x0_small_dot_center,
+    r = r_small_dot),
+    fill = "white",
+    linewidth = linewidth_circles,
+    colour = "white") +
+  scale_x_continuous(expand = c(0, 0)) +
+  scale_y_continuous(expand = c(0, 0)) +
+  coord_fixed(xlim = c(0, 1000),
+              ylim = c(0, 1000)) +
+  theme_void()
+```
+
+```{r}
+#| label: logo-white-on-black
+#| code-fold: true
+#| echo: true
+gg_logo_white_on_black <- ggplot() +
+  aes(xmin = 0, xmax = 10, y = 0, ymax = 10) +
+  geom_ribbon(stat = 'function', fun = func_story_line,
+              mapping = aes(ymin = after_stat(y), ymax = Inf, x = 1000),
+              fill = "white") +
+  geom_ribbon(stat = 'function', fun = func_graph_line,
+              mapping = aes(ymin = after_stat(y), ymax = Inf, x = 1000),
+              fill = cols_gpcds$black_alterative) +
+  geom_ribbon(stat = 'function', fun = func_story_line,
+              mapping = aes(ymin = after_stat(y), ymax = -Inf, x = 1000),
+              fill = cols_gpcds$black_alterative) +
+  geom_circle(aes(x0 = 500,
+                  y0 = 500,
+                  r = 1000 / {1.618 * 2}),
+              fill = "white", 
+              linewidth = linewidth_circles,
+              colour = cols_gpcds$black_alterative) +
+  geom_circle(aes(
+    x0 = x0_small_dot_center,
+    y0 = x0_small_dot_center,
+    r = r_small_dot),
+    fill = cols_gpcds$black_alterative,
+    linewidth = linewidth_circles,
+    colour = cols_gpcds$black_alterative) +
+  scale_x_continuous(expand = c(0, 0)) +
+  scale_y_continuous(expand = c(0, 0)) +
+  coord_fixed(xlim = c(0, 1000),
+              ylim = c(0, 1000)) +
+  theme_void()
+```
+
+<center>
+![](../../brand-identity/logo_gpcds_colour.png){width=250px} ![](../../brand-identity/logo_gpcds_black_on_white.png){width=250px} ![](../../brand-identity/logo_gpcds_white_on_black.png){width=250px}
+</center>
+<br/>
+To give meaning to this design, here are the design choices we used
+
+- Golden ratio sizes. The largest disc is sized at `logo_diameter / {1.618 * 2}` and the smaller disc is `logo_diameter / {1.618 * 2 * 3}` 
+
+- There's a small optical illusion where the green stripe appears quite thin at the bottom left but is actually sized by dragging the smaller disc into the corner.
+
+- The green stripe has angles of 45±8 degrees.
 
 # Lettermark
 
@@ -643,26 +770,11 @@ We've tried to replicate the lettermark directly here with HTML and CSS but unfo
 <span style='color:{{<brand color graph-primary>}};'>G</span><span style='color:{{<brand color black-mid>}};'>|</span><span style='color:{{<brand color plot-primary>}};'>P</span><span style='color:{{<brand color black-mid>}};'>|</span><span style='color:{{<brand color chart-primary>}};'>C</span><span style='color:{{<brand color black-mid>}};'>|</span><span style='color:{{<brand color story-primary>}};'>DS</span>
 :::
 
-# Combination Marks
-
-The combination marks were constructed in Canva for simplicity. To provide some *meaning* to how the lettermark and logomark relate to one another the height of the pipe character has been set to 150px and the logomark is 2 * ϕ * 150px
-
-The 1:1 and 4:3 ratio combination marks are crops of the same image with a vertical alignment, whereas the 16:9 combination mark is horizontally arranged:
-
-::: {layout-ncol=2}
-
-![](../../brand-identity/combination-mark_16-9.png)
-
-![](../../brand-identity/combination-mark_compare-4-3-and-1-1.png)
-
-:::
-
-
 # Favicon
 
-Favicons are miniture versions of the logo used for website icon etc, the logomark has been simplified to rectangles coloured with the primary colour of each visualisation category.
+Favicons are miniture versions of the logo used for website icon etc. By abandoning the ident design elements for the logo we have managed to produce a design that scales all the way down to 32x32 pixels with a slight tweak to the linewidth of the discs.
 
-![](../../brand-identity/favicon_144x144.png)
+![](../../brand-identity/favicon_32x32.png)
 
 
 

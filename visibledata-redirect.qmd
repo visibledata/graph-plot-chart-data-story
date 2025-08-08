@@ -34,12 +34,17 @@ We're now **Graph | Plot | Chart | Data Story** - a data visualisation consultan
 
 Please get in touch with us via **hello@gpcds.com**
 
+
 ```{=html}
 <style>
+#quarto-content {
+  min-height: auto !important;
+  height: auto !important;
+}
 main {
   position: relative; /* **CRUCIAL:** Makes 'main' the reference for absolute children */
   /* Optional: Ensures 'main' has a minimum height so the bottom-aligned div is visible */
-  min-height: 50vh; 
+  min-height: auto; 
   padding-bottom: 550px; /* Adjust this based on the actual height of your div */
 }
 

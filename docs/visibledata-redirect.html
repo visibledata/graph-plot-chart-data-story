@@ -189,10 +189,14 @@ quarto-title-block {
 </div></div><p>We’re now <strong>Graph | Plot | Chart | Data Story</strong> - a data visualisation consultancy run by Charlotte Hadley.</p>
 <p>Please get in touch with us via <strong>hello@gpcds.com</strong></p>
 <style>
+#quarto-content {
+  min-height: auto !important;
+  height: auto !important;
+}
 main {
   position: relative; /* **CRUCIAL:** Makes 'main' the reference for absolute children */
   /* Optional: Ensures 'main' has a minimum height so the bottom-aligned div is visible */
-  min-height: 50vh; 
+  min-height: auto; 
   padding-bottom: 550px; /* Adjust this based on the actual height of your div */
 }
 
