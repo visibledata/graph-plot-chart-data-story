@@ -48,46 +48,35 @@ Data visualisation is too big for a single category
 </span>
 </div>
 <div class="g-col-12 g-col-md-6 p-md-4 p-12 d-flex align-items-center container">
-<span style='font-size:clamp(8px, 1.5em, 92px);line-height:1.6;'>
+<span style='font-size:clamp(12px, 1.8em, 102px);line-height:1.6;'>
 <!-- We use the sometimes confusing, overlapping and personal opinion laced topics about **graphically representing data** as an opportunity to explore, educate... and have some fun! -->
-Data storytelling is essential but it doesn't cover everything you should be doing do with the **graphical representation of data**. 
+Let's have more fun, humanity and reproducibility in our data visualisation and storytelling.
 </span>
 </div>
 </div>
 </div>
 <!--- END: Mission statement --->
 
-::: {.card}
-
-HEY
-
-:::
-
-<div class="grid" style="row-gap:0;font-family:Futura;font-size:1.5em;background-color:{{<brand color grey-light>}};padding-top:20px">
-<div class="g-col-12 g-col-sm-3 p-md-4" style='text-align:center'>
-<a href="workshops_overview.html" style='text-decoration:none;'>
-<i class="fa-solid fa-screwdriver-wrench" style='color:{{<brand color graph-tertiary>}};font-size:2.5em;'></i>
-<p style='color:{{<brand color graph-tertiary>}};'>Workshops</p>
+<div class="grid column-screen" style="row-gap:0;font-family:Futura;font-size:1.5em;background-color:{{<brand color grey-light>}};padding-top:20px">
+<div class="g-col-12 g-col-sm-4 p-md-4" style='text-align:center'>
+<a class="services" href="workshops_overview.html" style='text-decoration:none;'>
+<!-- <i class="fa-solid fa-screwdriver-wrench" style='color:{{<brand color graph-tertiary>}};font-size:2.5em;'></i> -->
+<img src='images/icon_workshop-mixing.png' width="200px" style="padding-bottom:20px;"/>
+<p style='color:#8D5EA1;font-size:1.5em'>Workshops</p>
 </a>
 </div>
-<div class="g-col-12 g-col-sm-3 p-md-4" style='text-align:center'>
-<a href="coaching-and-consulting.html" style='text-decoration:none;'>
-<i class="fa-solid fa-users-between-lines" style='color:{{<brand color plot-tertiary>}};font-size:2.5em;'></i>
-<p style='color:{{<brand color plot-tertiary>}};'>Coaching & Consulting</p>
+<div class="g-col-12 g-col-sm-4 p-md-4" style='text-align:center'>
+<a class="services" href="coaching-and-consulting.html" style='text-decoration:none;'>
+<!-- <i class="fa-solid fa-users-between-lines" style='color:{{<brand color plot-tertiary>}};font-size:2.5em;'></i> -->
+<img src="images/icon_bootcamp_mountains.png" width="200px" style="padding-bottom:20px;"/>
+<p style='color:#E48262;font-size:1.5em;'>Bootcamps</p>
 </a>
 </div>
-<div class="g-col-12 g-col-sm-3 p-md-4" style='text-align:center'>
-<a href="blog.html" style='text-decoration:none;'>
-<i class="fa-solid fa-newspaper" style='color:{{<brand color chart-tertiary>}};font-size:2.5em;'></i>
-<p style='color:{{<brand color chart-tertiary>}};'>Articles</p>
+<div class="g-col-12 g-col-sm-4 p-md-4" style='text-align:center'>
+<a class="services" href="blog.html" style='text-decoration:none;'>
+<img src="images/icon_coaching_idea.png" width="200px" style="padding-bottom:20px;"/>
+<p style='color:#7275DE;font-size:1.5em'>Coaching</p>
 </a>
-</div>
-<div class="g-col-12 g-col-sm-3 p-md-4" style='text-align:center'>
-<a href="podcast.html" style='text-decoration:none;'>
-<i class="fa-solid fa-podcast" style='color:{{<brand color story-tertiary>}};font-size:2.5em;'></i>
-<p style='color:{{<brand color story-tertiary>}};'>Podcast</p>
-</a>
-</div>
 
 </div>
 

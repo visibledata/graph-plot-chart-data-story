@@ -53,7 +53,7 @@
     "href": "index.html",
     "title": "Graph | Plot | Chart | Data Story",
     "section": "",
-    "text": "Data visualisation is too big for a single category \n\n\n We use the sometimes confusing, overlapping and personal opinion laced topics about graphically representing data as an opportunity to explore, educate… and have some fun! \n\n\n\n\n\n\n\nWorkshops\n\n\n\n\n\nCoaching & Consulting\n\n\n\n\n\nArticles\n\n\n\n\n\nPodcast\n\n\n\n\n\n\n We’re soft launching at the moment with lots more coming in Q4 2025….."
+    "text": "Data visualisation is too big for a single category \n\n\n  Let’s have more fun, humanity and reproducibility in our data visualisation and storytelling. \n\n\n\n\n\n\n\n\n\nWorkshops\n\n\n\n\n\n\nBootcamps\n\n\n\n\n\nCoaching\n\n\n\n\n\n\n We’re soft launching at the moment with lots more coming in Q4 2025….."
   },
   {
     "objectID": "graph.html#edges-from-grouped-data",
@@ -201,5 +201,12 @@
     "title": "About our workshops",
     "section": "Tickets and T&CS",
     "text": "Tickets and T&CS\n\n\n\nOur workshops are delivered by our trainer Charlotte Hadley\nWe run in-person and online workshops.\n\nOnline workshops are hosted via Zoom.\nIn-person workshops will also provide accessibility information.\n\nSome of our workshops are limited to 6 people. This means our instructor Charlotte can focus on you and your questions. Why 6? It’s an R Easter Egg.\nTickets are sold via the awesome Ticket Tailor service. They’re an environmentally friendly B Corp. Consider switching to them yourself!\nUnless otherwise stated in your ticket, we have a default refunds policy.\n\n\n\n\n\n\n\nClick here to buy ticketsSell tickets online with Ticket Tailor"
+  },
+  {
+    "objectID": "DELETE-ME.html",
+    "href": "DELETE-ME.html",
+    "title": "Untitled",
+    "section": "",
+    "text": "from sklearn.preprocessing import StandardScaler\nfrom sklearn.cluster import KMeans\nfrom palmerpenguins import load_penguins\nimport pandas as pd\nimport numpy as np\npd.options.mode.chained_assignment = None\n\npenguins_df = load_penguins()\npenguins_cleaned_df = penguins_df.dropna()\n\nselected_features = [\"bill_length_mm\", \"flipper_length_mm\"]\n\nmodel_params = {\"n_clusters\": 3,\n                \"max_iter\": 300}\n\npenguins_data_df = penguins_cleaned_df.copy()\n\nfeatures_df = penguins_data_df.loc[:, selected_features]\n\n# Scale data ready for kmeans model\nstandard_scalar = StandardScaler()\nfeatures_standard_scalar = standard_scalar.fit_transform(features_df)\n\nkmeans_model = KMeans(\n    n_clusters=model_params[\"n_clusters\"], max_iter=model_params[\"max_iter\"])\n\npenguin_predictions = kmeans_model.fit_predict(features_standard_scalar)\npenguins_data_df.loc[:, \"cluster\"] = penguin_predictions\n\n# Label cluster by the most common species found in the cluster\ncluster_species = penguins_data_df.groupby(\n    \"species\")[\"cluster\"].agg(lambda x: x.value_counts().index[0])\n\nimport plotnine as pn\n\n\npenguins_clust_long_df = pd.melt(penguins_data_df.loc[:, selected_features + [\"cluster\", \"species\"]],\n                                 id_vars=[\"bill_length_mm\",\n                                          \"flipper_length_mm\"],\n                                 var_name=\"measure\",\n                                 value_name=\"group\")\n\n\npn_scatter_clustering = (\n    pn.ggplot(penguins_clust_long_df, pn.aes(\"bill_length_mm\",\n                                             \"flipper_length_mm\", color=\"factor(group)\"))\n    + pn.geom_point()\n    + pn.facet_wrap(\"measure\")\n)"
   }
 ]

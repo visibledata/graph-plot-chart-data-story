@@ -12,6 +12,16 @@ $footer-height: 100px;
 }
 
 
+a.services {
+  // Styles for the anchor tag itself
+  &:hover {
+    // Styles for the anchor tag on hover
+    text-shadow: 0 0 5px grey; 
+    img {
+     filter: drop-shadow(6px 6px 6px grey);
+    }
+  }
+}
 
 h1 {
   font-family: Futura;
