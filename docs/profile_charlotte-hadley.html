@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.29">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -32,14 +32,19 @@ ul.task-list li input[type="checkbox"] {
 <link href="./favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-9cfdc87e16b2bf3d6786c761657ef46f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15ea27bac76f9890c21e80949f497921.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-15ea27bac76f9890c21e80949f497921.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15ea27bac76f9890c21e80949f497921.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0c904fb02d822ebdc8479f3ec132b079.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-1933e9327760d1785c4373308a3e143d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-1933e9327760d1785c4373308a3e143d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-1933e9327760d1785c4373308a3e143d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -95,62 +100,52 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./brand-identity/favicon_32x32.png" alt="" class="navbar-logo">
+    <img src="./brand-identity/favicon_32x32.png" alt="" class="navbar-logo light-content">
+    <img src="./brand-identity/favicon_32x32.png" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">GPCDS</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-workshops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-tools" role="img">
-</i> 
- <span class="menu-text">Workshops</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-workshops">    
-        <li>
-    <a class="dropdown-item" href="./workshops_overview.html">
- <span class="dropdown-text">About our workshops</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./workshops_r.html">
- <span class="dropdown-text">R</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./workshops_data-storytelling.qmd">
- <span class="dropdown-text">Data Storytelling</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-articles" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Articles</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-articles">    
-        <li>
-    <a class="dropdown-item" href="./blog.html">
- <span class="dropdown-text">Blog</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./dashboards.qmd">
- <span class="dropdown-text">Dashboards</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./consulting-and-coaching.qmd"> <i class="bi bi-chat-left-quote-fill" role="img">
-</i> 
-<span class="menu-text">Contact us</span></a>
+    <a class="nav-link" href="./workshops_overview.html"> 
+<span class="menu-text"><i class="fa-solid fa-brush"></i> Workshops</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./bootcamps.html"> 
+<span class="menu-text"><i class="fa-solid fa-mountain-sun"></i> Bootcamps</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./what-it-it.qmd"> <i class="bi bi-patch-question-fill" role="img">
+    <a class="nav-link" href="./coaching-and-consulting.html"> 
+<span class="menu-text">Coaching</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-articles" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Articles</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-articles">    
+        <li>
+    <a class="dropdown-item" href="./blog.html">
+ <span class="dropdown-text">Our blog</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="./what-it-it.qmd"><i class="bi bi-patch-question-fill" role="img">
 </i> 
-<span class="menu-text">Graph, Plot, Chart or Data Story?</span></a>
+ <span class="dropdown-text">Graph? Plot? Or Chart…?</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About us</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -204,10 +199,10 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/profile-pic_charotte-hadley.JPG" class="img-circle img-fluid" width="150"></p>
 <p><i class="fa-solid fa-person-walking-luggage" aria-label="graduation-cap"></i> Charlotte Jane Hadley <br> <i class="fa-solid fa-transgender" aria-label="graduation-cap"></i> She/Her <br> <i class="fa-solid fa-at" aria-label="at"></i> charliejhadley <br> <i class="fa-brands fa-orcid" aria-label="envelope"></i> 0000-0002-3039-6849<br></p>
 </div>
-<section id="hey-im-charlie" class="level3 g-col-8">
-<h3 class="anchored" data-anchor-id="hey-im-charlie">Hey! I’m Charlie 🙋‍♀️</h3>
-<p>I love data, open science and reproducible data pipelines. A little bit too much.</p>
-<p>I’m proud of my work coaching and empowering others to tell data stories and become fluent in reproducible code (mostly with R).</p>
+<section id="hey-im-charlotte" class="level3 g-col-8">
+<h3 class="anchored" data-anchor-id="hey-im-charlotte">Hey! I’m Charlotte 🙋‍♀️</h3>
+<p>I love data, open science and reproducible data pipelines. While my name is Charlotte, I’m more generally known as Charlie and <span class="citation" data-cites="charliejhadley">@charliejhadley</span> online.</p>
+<p>I’m proud of my work coaching and empowering others to tell data stories and become fluent in reproducible code.</p>
 <p>Fancy getting in touch? Say <strong>hello@gpcds.com</strong>.</p>
 </section>
 </div>
@@ -311,7 +306,7 @@ Learn how to make interactive charts, tables, maps and more in this dedicated 5h
                         <li class="list-inline-item event-list">
                             <div class="px-4">
                                 <div class="event-date bg-soft-success text-success">2025</div>
-                                <img src="brand-identity/logomark_detailed_colour.png" height="75px">
+                                <img src="brand-identity/logo_gpcds_colour.png" height="75px">
                                 <!-- <h6>University of<br>Oxford</h6> -->
                             </div>
                         </li>
@@ -673,13 +668,14 @@ Researcher, Plant Science
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -1025,28 +1021,23 @@ Researcher, Plant Science
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>GPCDS is run by Charlotte Hadley <br>Please get in touch!</p>
+<p>Graph | Plot | Chart | Data Story <br><a href="data-ethics_t-and-cs.html">Data Ethics and T&amp;Cs</a>.</p>
 </div>   
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./data-ethics_t-and-cs.html">
-<p>Data Ethics and T&amp;Cs</p>
+    <a class="nav-link" href="./workshops_overview.html">
+<p><i class="fa-solid fa-brush"></i> Workshops</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./faq.qmd">
-<p>FAQ</p>
+    <a class="nav-link" href="./bootcamps.html">
+<p><i class="fa-solid fa-mountain-sun"></i> Bootcamps</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./visibledata-redirect.html">
-<p>Visible Data Redirect</p>
-</a>
-  </li>  
-    <li class="nav-item">
-    <a class="nav-link active" href="./profile_charlotte-hadley.html" aria-current="page">
-<p>Rescued profile</p>
+    <a class="nav-link" href="./coaching-and-consulting.html">
+<p><i class="fa-solid fa-lightbulb"></i> Coaching</p>
 </a>
   </li>  
 </ul>
@@ -1055,19 +1046,7 @@ Researcher, Plant Science
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
     <a class="nav-link" href="https://twitter.com/quarto_pub">
-      <i class="bi bi-twitter" role="img" aria-label="Quarto Twitter">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/quarto-dev/quarto-cli">
-      <i class="bi bi-github" role="img" aria-label="Quarto GitHub">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://quarto.org/docs/blog/index.xml">
-      <i class="bi bi-rss" role="img" aria-label="Quarto Blog RSS">
+      <i class="bi bi-linkedin" role="img" aria-label="Quarto Twitter">
 </i> 
     </a>
   </li>  

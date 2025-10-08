@@ -8,10 +8,8 @@ logo:
     full: brand-identity/logomark_colour.png
   small: icon
   medium: 
-    dark: full-white-on-black
     light: full
   large:
-    dark: full-white-on-black
     light: full
 
 color:

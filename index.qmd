@@ -50,7 +50,7 @@ Data visualisation is too big for a single category
 <div class="g-col-12 g-col-md-6 p-md-4 p-12 d-flex align-items-center container">
 <span style='font-size:clamp(12px, 1.8em, 102px);line-height:1.6;'>
 <!-- We use the sometimes confusing, overlapping and personal opinion laced topics about **graphically representing data** as an opportunity to explore, educate... and have some fun! -->
-Let's have more fun, humanity and reproducibility in our data visualisation and storytelling.
+Let's put more fun, humanity and reproducibility into your data visualisation and storytelling.
 </span>
 </div>
 </div>
@@ -73,7 +73,7 @@ Let's have more fun, humanity and reproducibility in our data visualisation and 
 </a>
 </div>
 <div class="g-col-12 g-col-sm-4 p-md-4" style='text-align:center'>
-<a class="services" href="blog.html" style='text-decoration:none;'>
+<a class="services" href="coaching-and-consulting.html" style='text-decoration:none;'>
 <img src="images/icon_coaching_idea.png" width="200px" style="padding-bottom:20px;"/>
 <p style='color:#7275DE;font-size:1.5em'>Coaching</p>
 </a>
@@ -85,7 +85,7 @@ Let's have more fun, humanity and reproducibility in our data visualisation and 
 <br/>
 
 <span style='font-size:clamp(8px, 1.5em, 92px);line-height:1.6;'>
-We're soft launching at the moment with lots more coming in Q4 2025.....
+We specialise in data visualisation for those who have their hands in data.
 </span>
 
 

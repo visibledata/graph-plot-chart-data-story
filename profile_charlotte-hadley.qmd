@@ -29,11 +29,11 @@ include-in-header:
 
 ::: {.g-col-8}
 
-### Hey! I'm Charlie 🙋‍♀️
+### Hey! I'm Charlotte 🙋‍♀️
 
-I love data, open science and reproducible data pipelines. A little bit too much.
+I love data, open science and reproducible data pipelines. While my name is Charlotte, I'm more generally known as Charlie and @charliejhadley online.
 
-I'm proud of my work coaching and empowering others to tell data stories and become fluent in reproducible code (mostly with R).
+I'm proud of my work coaching and empowering others to tell data stories and become fluent in reproducible code.
 
 Fancy getting in touch? Say **hello@gpcds.com**.
 
@@ -143,7 +143,7 @@ Learn how to combine {shiny} and RMarkdown together to create slide decks with i
                         <li class="list-inline-item event-list">
                             <div class="px-4">
                                 <div class="event-date bg-soft-success text-success">2025</div>
-                                <img src='brand-identity/logomark_detailed_colour.png' height='75px'/>
+                                <img src='brand-identity/logo_gpcds_colour.png' height='75px'/>
                                 <!-- <h6>University of<br>Oxford</h6> -->
                             </div>
                         </li>

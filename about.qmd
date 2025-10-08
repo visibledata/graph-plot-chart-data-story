@@ -1,32 +1,85 @@
 ---
-title: "About"
-image: brand-identity/logomark_colour.png
-about:
-  template: trestles
+title: "Welcome to Graph | Plot | Chart | Data Story"
+image: brand-identity/logo_gpcds_colour.png
+toc: true
 ---
 
-Services from GPCDS are provided via the comany Visible Data Ltd (10489177).
+::: {.grid} 
 
-We provide workshops, consulting and coaching services.
+::: {.g-col-12 .g-col-md-8}
 
-Tickets to workshops have a cancellation policy that you can find via the Ticket Tailor booking service. Consulting and coaching services are provided under individual license agreements.
+*Graph | Plot | Chart | Data Story* or *(GPCDS)* is a data visualisation and storytelling studio.
+
+GPCDS is a queer owned business based in Bristol (UK) founded by Charlotte Hadley. With as much kindness as possible, if you do not support Trans Rights please do not engage our services.
 
 You can contact us at any time via **hello@gpcds.com**
 
+:::
+
+::: {.g-col-12 .g-col-md-4 .align-middle .d-flex .justify-content-center .text-center}
+<img src='brand-identity/logo_gpcds_colour.png' style="max-height:200px"/>
+:::
+
+:::
+
+# What we do
+
+We specialise in three areas:
+
+- **Workshops not webinars**.<br/>There's nothing we love more than an audience-driven, hands-on workshop where we can do live data work so you leave with new knowledge and skills that are directly relevant to you. Come along, they're fun.
+
+- **Bootcamps without agnosticism**<br/>
+Our dataviz bootcamps are explicitly bound to a data visualisation tool. We equip you to get your hands dirty with data, the graphical representaton of data and storytelling. This is not tool agnostic advice.
+
+- **Coaching and consulting**<br/>
+Need a push, help in hand or for us to build something for you? With over a decade's experience with our toolkit we know that we can get you to where you need to be. This might include referring you to our partners in the wider data visualisation or programmaing community.
+
+# Who do we work with?
+
+We work with data professionals from all walks of life, across industry the charity sector and academia. 
+
+We are best suited for folks who (at least occassionally) get their hands dirty with data. There are storytelling studios that might be better suited for data leaders who are far removed from their wrangling and tech stack - if we feel your needs are better supported by other agencies we will gladly recommend them.
+
+# Who are we?
+
+At the moment our studio is run end-to-end by Charlotte Hadley - our founder and instructor. We're working on growing our team in 2026!
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-sm-3}
+
+:::
+
+::: {.g-col-12 .g-col-sm-6 .justify-content-center .text-center}
+::: {.card}
+<a href="profile_charlotte-hadley.html" class="stretched-link">
+![](images/profile-pic_charotte-hadley.JPG){.img-circle width='150px'}
+
+<i class="fa-solid fa-person-walking-luggage" aria-label="graduation-cap"></i> Charlotte Jane Hadley 
+<br>
+<i class="fa-solid fa-transgender" aria-label="graduation-cap"></i> She/Her 
+<br>
+<i class="fa-solid fa-at" aria-label="at"></i> charliejhadley
+<br> 
+<i class="fa-brands fa-orcid" aria-label="envelope"></i> 0000-0002-3039-6849<br> 
+</a>
+:::
+:::
+
+::: {.g-col-12 .g-col-sm-3}
+
+:::
+
+:::
+
+# Data and business ethics
+
+We are deeply committed to running our business ethically in all ways, please see our dedicated [Data Ethics and T&Cs page](data-ethics_t-and-cs.qmd). Note that this page provides details on our GenAI practices.
+
+# Legal information
+
 These details are provided both for your information and to satisfy [Stripe's business website requirements](https://support.stripe.com/questions/business-website-for-account-activation-faq) - which is a great policy. Hello folks 👋
 
-# GenAI Policy
+*Graph | Plot | Chart | Data Story* and *GPCDS* are trading names of Visible Data Ltd. 
 
-All tech is political. GenAI tools should not be used casually without understanding the deep ethical impacts of the energy use of GenAI, copyright infringement and what it means for creativity.
-
-> We fully support and understand that many of our clients have benefited from all sorts of generative tools. Individuals and companies have the freedom to exercise lifestyle choices the way they see fit.
-
-- We refuse to use image generation tools for throw away content. The energy impact of generating an image used on a single slide is not justifiable - for us it is equivalent to disposable e-waste.
-
-- We refuse to **any** generative images without disclosing their origin.
-
-- We refuse to use GenAI tools for idea generation without disclosing their use, and do not **begin** with GenAI.
-
-- We exercise restraint in the use of generative coding tools. It would be *silly* to refuse to use command completion, auto-correct and other common IDE features. Similarly, refusing to engage with any generative code tools feels reactive. However, vibe coding doesn't align with our desire to truly understand the work and data that we interact with.
-
-- We do not use **any** GenAI tools with clients data, information or ideas without a client specifically requesting them.
+Visible Data Ltd is registered in England and Wales. Company No: 10489177

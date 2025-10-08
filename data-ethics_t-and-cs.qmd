@@ -1,23 +1,27 @@
 ---
-title: "T&Cs and Data Ethics"
+title: "Data Ethics and our T&Cs"
 image: brand-identity/logomark_colour.png
 toc-expand: 2
 ---
 
-
-# Data Ethics
-
 > All tech is political. From the metal extracted to run code, the authors writing code and the power generated to cool the metal. Raise that by magnitudes for data.
 
-You'll find information about both our data ethics and social policies here.
+This page contains information about both our ethics, [code of conduct for events](#code-of-conduct) and general terms and conditions. If you have any questions please get in touch **hello@gpcds.com**.
+
+# Data Ethics
 
 ## GenAI Policy
 
 GenAI tools should not be used casually without understanding the deep ethical impacts of the energy use of GenAI, copyright infringement and what it means for creativity.
 
-> We fully support and understand that many of our clients have benefited from all sorts of generative tools. Individuals and companies have the freedom to exercise lifestyle choices the way they see fit.
+> We fully understand that many of our clients have benefited from all sorts of generative tools. Individuals and companies have the freedom to exercise lifestyle choices the way they see fit.
 
-- We refuse to use image generation tools for throw away content. The energy impact of generating an image used on a single slide is not justifiable - for us it is equivalent to disposable e-waste.
+- **Memes over slop**.<br/>
+We refuse to use GenAI tools for single use images, it's equivalent to single use e-waste. Memes are wonderful, silly and evidence of human community.</br>
+GenAI images will always be clearly marked when we are aware of their provenance.
+
+- **Creativity over unattributed rehashing**<br/>
+Forgetting for a moment that they hallucinate, GenAI tools do not help you understand we stand on the shoulders of giants and that.
 
 - We do not use **any** GenAI tools with clients data, information or ideas without a client specifically requesting them.
 
@@ -27,17 +31,29 @@ GenAI tools should not be used casually without understanding the deep ethical i
 
 - We exercise restraint in the use of generative coding tools. It would be *silly* to refuse to use command completion, auto-correct and other common IDE features. Similarly, refusing to engage with any generative code tools feels reactive. However, vibe coding doesn't align with our desire to truly understand the work and data that we interact with.
 
-# T&Cs
+## Licensed images
 
-Services from GPCDS are provided via the comany Visible Data Ltd (10489177).
+GPCDS uses images from [flaticon.com](https://www.flaticon.com) and have purchases licenses for these images. 
 
-We provide workshops, consulting and coaching services.
+# Code of Conduct for Events {#code-of-conduct}
 
-Tickets to workshops have a cancellation policy that you can find via the Ticket Tailor booking service. Consulting and coaching services are provided under individual license agreements.
+We have developed this code of conduct (adapted from [confcodeofconduct.com/](http://confcodeofconduct.com/)) to create a safe and welcoming environment for everyone attending our online or in-person events. 
 
-You can contact us at any time via **hello@gpcds.com**
+You are required to agree to this code of conduct when attending our events. We expect cooperation from all participants to help ensure a safe environment for everybody.
 
-These details are provided both for your information and to satisfy [Stripe's business website requirements](https://support.stripe.com/questions/business-website-for-account-activation-faq) - which is a great policy. Hello folks 👋
+We are dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity and expression, sex, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of other participants in any form. Sexual language and imagery is not appropriate. Participants violating these rules may be sanctioned or expelled from courses and/or workshops they are signed up for without a refund.
+
+Harassment includes offensive verbal comments related to gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion, technology choices, sexual images in public spaces, deliberate intimidation, stalking, following, and unwelcome sexual attention.
+
+Participants asked to stop any harassing behavior are expected to comply immediately.
+
+If a participant engages in harassing behavior, we may take any action we deem appropriate, including warning the offender or expulsion from the workshop or course they are signed up for with no refund.
+
+If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact us immediately. All reports will be taken seriously.
+
+# Terms and Conditions
+
+*Graph | Plot | Chart | Data Story* and *GPCDS* are trading names of Visible Data Ltd. Visible Data Ltd is registered in England and Wales. Company No: 10489177
 
 ## Ticket Refund Policy
 

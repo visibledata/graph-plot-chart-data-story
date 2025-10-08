@@ -19,63 +19,49 @@ website:
     site: "@charliejhadley"
     card-style: "summary_large_image"
   navbar:
+    search: false
     pinned: true
     # background: "#4464AD"
     # background: "#2b2b2b"
     color: "white"
-    title: false
+    title: GPCDS
     left: 
       # - icon: house
       #   text: "Home"
       #   file: index.qmd
-      - icon: tools
-        text: "Workshops"
-        menu:
-          - text: "R"
-            href: workshops_r.qmd
-          - text: "Data Storytelling"
-            href: workshops_data-storytelling.qmd
-          - text: "---"
-          - text: "About our workshops"
-            href: workshops_overview.qmd
+      - text: "<i class='fa-solid fa-brush'></i> Workshops"
+        href: workshops_overview.qmd
+      - text: "<i class='fa-solid fa-mountain-sun'></i> Bootcamps"
+        href: bootcamps.qmd
+    right:
+      - text: "Coaching"
+        href: coaching-and-consulting.qmd
       - text: "Articles"
         menu:
-          - text: "Blog"
+          - text: "Our blog"
             href: blog.qmd
-          - text: "Dashboards"
-            href: dashboards.qmd
-      # - icon: broadcast-pin
-      #   href: podcast.qmd
-      - icon: chat-left-quote-fill
-        text: "Contact us"
-        href: consulting-and-coaching.qmd
-    right:
-      - icon: patch-question-fill
-        text: "Graph, Plot, Chart or Data Story?"
-        href: what-it-it.qmd
+          - text: "---"
+          - text: "Graph? Plot? Or Chart...?"
+            icon: patch-question-fill
+            href: what-it-it.qmd
+      - text: "About us"
+        href: about.qmd
   page-footer:
     left: |
-      GPCDS is run by Charlotte Hadley
-      <br>Please get in touch!
+      Graph | Plot | Chart | Data Story
+      <br>hello@gpcds.com
+      <br/><a href='data-ethics_t-and-cs.html'>Data Ethics and T&Cs</a>.
     center:
-      - text: "Data Ethics and T&Cs"
-        href: data-ethics_t-and-cs.qmd
-      - text: "FAQ"
-        href: faq.qmd
-      - text: "Visible Data Redirect"
-        href: visibledata-redirect.qmd
-      - text: "Rescued profile"
-        href: profile_charlotte-hadley.qmd
+      - text: "<i class='fa-solid fa-brush'></i> Workshops"
+        href: workshops_overview.qmd
+      - text: "<i class='fa-solid fa-mountain-sun'></i> Bootcamps"
+        href: bootcamps.qmd
+      - text: "<i class='fa-solid fa-lightbulb'></i> Coaching"
+        href: coaching-and-consulting.qmd
     right:
-      - icon: twitter
+      - icon: linkedin
         href: https://twitter.com/quarto_pub
         aria-label: Quarto Twitter
-      - icon: github
-        href: https://github.com/quarto-dev/quarto-cli
-        aria-label: Quarto GitHub
-      - icon: rss
-        href: https://quarto.org/docs/blog/index.xml
-        aria-label: Quarto Blog RSS
   sidebar:
     - id: id-workshop
       title: "GPCDS Workshops"

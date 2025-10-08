@@ -1,0 +1,10 @@
+---
+title: "Bootcamps"
+toc: true
+---
+
+Our bootcamps are your opportunity to fully embed yourself into data visualisation and storytelling whilst simulataeously equipping yourself with a dedicate visualisation tool.
+
+No room for agnosticism here. Get dug in.
+
+R. Excel.
