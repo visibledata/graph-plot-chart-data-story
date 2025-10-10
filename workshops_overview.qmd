@@ -29,7 +29,61 @@ We use the [**awesome** Ticket Tailor service](https://www.tickettailor.com/even
 
 :::
 
-# Meet your workshop leaders
+# Testimonials
+
+I'm proud to have worked with 100s of learners and clients across industry, academia and the charity sector. These are a selection of the comments and feedback I've received.
+
+:::: {.grid .column-screen-inset}
+
+::: {.g-col-12 .g-col-md-4 .g-col-sm-6}
+
+<blockquote class="testimonial">
+Charlie’s expertise of R made the training session I had absolutely brilliant! We covered a mass of material, without it seeming overwhelming.
+<p class="testimonial-attribution">Data Scientist, Insurance Industry</p>
+</blockquote>
+
+:::
+
+::: {.g-col-12 .g-col-md-4 .g-col-sm-6}
+
+<blockquote class="testimonial">
+ Charlie’s enthusiasm & passion for all things R, are hard not to get caught up in. I will look forward to reading blogs by Charlie and hopefully attending more trainings in the future.
+<p class="testimonial-attribution">Benjamin Sutton, Brit Insurance</p>
+</blockquote>
+
+:::
+
+::: {.g-col-12 .g-col-md-4 .g-col-sm-6}
+
+<blockquote class="testimonial">
+Thank you so much Charlie! I'm really impressed with the quality of this course, and I'll be referring back to certain videos/topics as they come up in my geospatial journey ;) Thanks again!
+<p class="testimonial-attribution">Data Scientist, Fishing Industry</p>
+</blockquote>
+
+:::
+
+::: {.g-col-12 .g-col-sm-6}
+
+<blockquote class="testimonial">
+Thank you for all the help! I feel like searching the internet for help with R is like looking for a very specific needle across a giant field of haystacks, and you both are the metal detectors that get us where we need to be more quickly.
+<p class="testimonial-attribution">Technical Director, Tropical Health</p>
+</blockquote>
+
+:::
+
+::: {.g-col-12 .g-col-sm-6}
+
+<blockquote class="testimonial">
+I thank you for the last feedback, I loved it because now I can change the style with css, which I had no idea about. You are a sweetheart, because when I listen to your video I feel light and at peace!
+<p class="testimonial-attribution">Researcher, Plant Science</p>
+</blockquote>
+
+:::
+
+::::
+
+
+# Meet your workshop leader
 
 ::: {.grid .column-page}
 
@@ -52,7 +106,11 @@ We use the [**awesome** Ticket Tailor service](https://www.tickettailor.com/even
 
 ### Hey - I'm Charlie! 🙋‍♀️
 
-I've been coaching and training in data science across academia, industry and as an independent consultant since 2012.
+I've been coaching, training and working hands-on in data visualisation and storytelling since 2012.
+
+I'm a proudly certified and commercially successful data coach, and I've built the data-focused train the trainer program for the multiple award winning Data & AI Academy at Admiral.
+
+Nothing is more important to me more than meeting my learners and customers where **you** are. It doesn't matter what your tech, data or visualisation fluency is. I love finding what matters to you and building from there.
 
 ```{=html}
 <div style='padding-top:10px;'>
@@ -101,7 +159,9 @@ I've been coaching and training in data science across academia, industry and as
 </div>
 ```
 
-Charlie blends enthusiasm, honesty and a conviction that she'll only train things she properly understands. Read more about Charlie work in [her full profile](profile_charlotte_hadley).
+Want to learn more about why you 
+
+Read more about Charlie work in [her full profile](profile_charlotte-hadley.html).
 
 Fancy getting in touch? Say **hello@gpcds.com**.
 

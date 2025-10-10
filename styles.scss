@@ -64,14 +64,16 @@ h2 {
 .testimonial {
   padding: 10px 20px;
   margin: 0 0 20px;
-  font-size: 14px;
+  // font-size: 14px;
+  background-color: darken($brand-neutral, 5%);
   border-left: 5px solid $brand-brand-blue;
+  color: $brand-story-tertiary-darker
 }
 .testimonial footer,
 .testimonial small,
 .testimonial .small {
   display: block;
-  font-size: 80%;
+  // font-size: 120%;
   line-height: 1.42857143;
   color: #999999;
 }
@@ -87,11 +89,10 @@ h2 {
 
 .testimonial-attribution {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-size: 14px;
   padding-top: 5px;
   font-weight: 900;
   line-height: 1.1;
-  color: #333333;
+  color: $brand-story-primary;
 }
 
 // -----------------------------------------------------------------------------
@@ -131,7 +132,7 @@ h2 {
   border-radius: 4px;
   padding: 2px 4px;
 }
-@media (min-width: 768px) {
+@media (min-width: 575px) {
   .hori-timeline .events .event-list {
       display: inline-block;
       width: 18%;
